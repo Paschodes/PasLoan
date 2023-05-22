@@ -1,0 +1,121 @@
+.signup-container {
+    background: #F0F4FC;
+    font-family: 'Helvetica';
+    font-style: normal;
+}
+
+.signup {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+    height: 1059px;
+
+}
+
+.build-img {
+    height: 834px;
+}
+
+/* .signup-content {
+    padding-top: 303px;
+} */
+
+.logo-img {
+    width: 296px;
+    height: 100px;
+    left: calc(50% - 296px/2 + 305px);
+    top: 412px;
+    margin-top: 15px;
+}
+
+.logo-text {
+    height: 34px;
+    top: 531px;
+    font-weight: 700;
+    font-size: 13px;
+    /* line-height: 28px; */
+    text-align: center;
+    color: #000000;
+    max-width: 881px;
+    margin-top: 0;
+}
+
+.signup-inputs {
+    margin-top: 20px;
+}
+
+.signup-inputs h2 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 24px;
+}
+
+.signup-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    margin: 0px auto;
+    width: 500px;
+}
+
+.signup-labels label {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.signup-labels input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 17px;
+    margin: 0 auto 15px;
+    width: 500px;
+    background: #FFFFFE;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.signup-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 17px;
+    margin: 12px auto 15px;
+    width: 410px;
+    background: #010E2A;
+    border-radius: 8px;
+    color: #FFFFFE;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.signup-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-top: 40px;
+    /* margin-left: 72px; */
+}
+
+.signup-p span {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 3px;
+    color: #0744D3;
+}

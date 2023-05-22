@@ -1,0 +1,12 @@
+.confirm {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+    height: 620px;
+    background: #F0F4FC;
+}
+
+.confirm-img {
+    height: 620px;
+}

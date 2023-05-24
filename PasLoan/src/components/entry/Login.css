@@ -15,15 +15,8 @@
     margin-top: 25px;
 }
 
-.login-logo {
-    display: flex;
-    align-items: flex-start;
-    width: 140px;
-    margin-left: 20px;
-}
-
 .login-down {
-    margin-top: 130px;
+    margin-top: 120px;
 }
 
 .login-content h2{
@@ -32,6 +25,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 24px;
+    margin-bottom: 30px;
 }
 
 .login-inputs input {
@@ -51,12 +45,11 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-
     position: absolute;
     width: 140px;
     height: 24px;
-    left: 1069px;
-    top: 373px;
+    left: 969px;
+    top: 375px;
 }
 
 .login-btn {

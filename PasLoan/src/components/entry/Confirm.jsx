@@ -1,26 +1,34 @@
 import React from 'react'
 import login from '../../assets/loginImage.jpg'
-import logo from '../../assets/applogo.svg'
 import { Link } from 'react-router-dom'
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import './Confirm.css'
+import LoginLogo from '../../LoginLogo';
 
 const Confirm = () => {
   return (
     <div className='confirm'>
         <img src={login} alt="login-img" className='login-img'/>
         <div className='confirm-content'>
-            <img className='login-logo' src={logo} alt="logo" />
-            <h2>Confirmation email sent</h2>
-            <p>Didn’t receive the email ? <br />
-                Please check the email address you used to make sure it matches the address
-                on your account try looking in your spam folder, or request another email below.
-            </p>
+            <LoginLogo />
+            <div className='confirm-info'>
+              <h2>Confirmation email sent !</h2>
+              <p>Didn’t receive the email ? <br />
+                  Please check the email address you used to make sure it matches the address
+                  on your account try looking in your spam folder, or request another email below.
+              </p>
 
-            <button>Send Again</button>
+              <button className='confirm-btn'>Send Again</button>
 
-            <Link to='/signup'>Go back to Sign Up page</Link>
-
-            <a href="/">Next</a>
+              <Link to='/signup' className='confirm-Link'>Go back to Sign Up page</Link>
+            </div>
+            
+            <div className='confirm-next'>
+              <Link to='/otp'>Next</Link>
+              <KeyboardDoubleArrowRightIcon className='arrow'/>
+              
+            </div>
+            
         </div>
     </div>
   )

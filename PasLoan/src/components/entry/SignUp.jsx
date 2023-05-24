@@ -2,6 +2,7 @@ import React from 'react'
 // import {logo} from '.assets/applogo.svg'
 import logo from '../../assets/applogo.svg'
 import build from '../../assets/building.svg'
+import login from '../../assets/loginImage.jpg'
 
 import './SignUp.css'
 import { Link } from 'react-router-dom'
@@ -11,6 +12,7 @@ const SignUp = () => {
     <div className='signup-container'>
         <div className='signup'>
             <img src={build} alt="building" className='build-img'/>
+            {/* <img src={login} alt="login-img" className='login-img'/> */}
 
             <div className='signup-content'>
                 {/* <img src={('.assets/applogo.svg')} alt="loggo" /> */}

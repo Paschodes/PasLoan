@@ -1,8 +1,8 @@
 import React from 'react'
 import login from '../../assets/loginImage.jpg'
 import { Link } from 'react-router-dom';
-import logo from '../../assets/applogo.svg'
 import './Login.css'
+import LoginLogo from '../../LoginLogo';
 
 const Login = () => {
   return (
@@ -11,7 +11,7 @@ const Login = () => {
             <img src={login} alt="login-img" className='login-img'/>
 
             <div className='login-content'>
-                <img className='login-logo' src={logo} alt="logo" />
+                <LoginLogo />
                 <div className='login-down'>
                     <h2>Welcome Back</h2>
 

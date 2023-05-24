@@ -5,8 +5,97 @@
     position: relative;
     height: 620px;
     background: #F0F4FC;
+    font-family: 'Helvetica';
+    font-style: normal;
 }
 
 .confirm-img {
     height: 620px;
+}
+
+.confirm-content {
+    margin-top: 20px;
+}
+
+.confirm-info {
+    margin-top: 120px;
+}
+
+.confirm-info h2 {
+    margin: 40px auto;
+    width: 433px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.confirm-info p {
+    width: 639px;
+    height: 72px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin: 20px auto;
+}
+
+.confirm-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 17px;
+    margin: 45px auto 15px;
+    width: 370px;
+    background: #010E2A;
+    border-radius: 8px;
+    color: #FFFFFE;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.confirm-Link {
+    margin: 0 auto;
+    width: 194px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0744D3;
+    text-decoration: none;
+}
+
+.confirm-content .confirm-next{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 77px;
+    height: 24px;
+    left: 1260px;
+    top: 562px;
+    color: #0744D3;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-content .confirm-next a {
+    text-decoration: none;
+    color: #0744D3;
+}
+
+.confirm-content .confirm-next .arrow {
+    opacity: 0.7;
+    cursor: pointer;
 }

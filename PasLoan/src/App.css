@@ -4,3 +4,10 @@
   padding: 2rem; */
   text-align: center;
 }
+
+.login-logo {
+  display: flex;
+  align-items: flex-start;
+  width: 140px;
+  margin-left: 20px;
+}

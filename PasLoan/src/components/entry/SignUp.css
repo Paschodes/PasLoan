@@ -7,14 +7,14 @@
 .signup {
     display: grid;
     column-gap: 10px;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     position: relative;
     height: 1059px;
 
 }
 
 .build-img {
-    height: 834px;
+    height: 627px;
 }
 
 /* .signup-content {
@@ -24,9 +24,9 @@
 .logo-img {
     width: 296px;
     height: 100px;
-    left: calc(50% - 296px/2 + 305px);
-    top: 412px;
-    margin-top: 15px;
+    /* left: calc(50% - 296px/2 + 305px);
+    top: 412px; */
+    margin: 15px 0px 0px 285px;
 }
 
 .logo-text {
@@ -51,6 +51,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 24px;
+    margin-bottom: 20px;
 }
 
 .signup-labels {
@@ -91,7 +92,7 @@
     flex-direction: column;
     align-items: center;
     padding: 15px 17px;
-    margin: 12px auto 15px;
+    margin: 12px 241px 15px;
     width: 410px;
     background: #010E2A;
     border-radius: 8px;
@@ -107,7 +108,7 @@
     align-items: center;
     padding: 0px;
     margin-top: 40px;
-    /* margin-left: 72px; */
+    margin-left: 14px;
 }
 
 .signup-p span {

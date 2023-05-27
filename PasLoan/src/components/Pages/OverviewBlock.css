@@ -1,0 +1,151 @@
+/* .overview-double {
+    margin-left: 30px;
+} */
+
+.overview-block {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.data-percentage {
+    width: 120px;
+}
+
+
+.overview {
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    width: 190px;
+    padding: 10px;
+    background: #FFFFFE;
+    border-bottom: 5px solid #0D99FF;
+    margin-right: 37px;
+    width: 190px;
+}
+
+.data-percentage p {
+    color: #010E2A;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 7px;
+    display: flex;
+    width: 116px;
+}
+
+.percentage {
+    display: flex;
+    align-items: flex-start;
+}
+
+.percentage p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #010E2A;
+}
+
+
+.overview-blue {
+    border-bottom: 5px solid #0D99FF;
+}
+.overview-blue .all-loans {
+    color: #717070;
+}
+.icon-blue {
+    color: #0D99FF;
+}
+.figure-blue {
+    color: #0D99FF;
+    font-size: 30px;
+    margin: 0px 0px 10px -17px;
+}
+
+
+.overview-green {
+    border-bottom: 5px solid #00D43D;
+}
+.icon-green {
+    color: #00D43D;
+}
+.figure-green {
+    color: #00D43D;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+.overview-yellow {
+    border-bottom: 5px solid #F3B516; 
+}
+.icon-yellow {
+    color: #F3B516;
+}
+.figure-yellow {
+    color: #F3B516;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.overview-red {
+    border-bottom: 5px solid #D30744;
+}
+.icon-red {
+    color: #D30744;
+}
+.figure-red {
+    color: #D30744;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.overview-black {
+    border-bottom: 5px solid #010E2A;
+}
+.icon-black {
+    color: #010E2A;
+}
+.figure-black {
+    color: #010E2A;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.overview-lemon {
+    border-bottom: 5px solid #297F04;
+}
+.icon-lemon {
+    color: #297F04;
+}
+.figure-lemon {
+    color: #297F04;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.overview-wine {
+    border-bottom: 5px solid #A90636;
+}
+.icon-wine {
+    color: #A90636;
+}
+.figure-wine {
+    color: #A90636;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.overview-sky {
+    border-bottom: 5px solid #6A8FE5;
+}
+.icon-sky {
+    color: #6A8FE5;
+}
+.figure-sky {
+    color: #6A8FE5;
+    font-size: 30px;
+    margin-bottom: 10px;
+}

@@ -4,48 +4,37 @@
     grid-template-columns: 1fr 4fr;
     position: relative;
     height: 620px;
-    background: #F0F4FC;
+    /* margin-top: 92px; */
 }
 
-.side-nav {
-    background: #04297F;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 232px;
-    padding: 8px 12px 20px 12px;
-    border-right: 1px solid rgb(219, 219, 219);
-    height: 550px;
-}
-
-.sidenav-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: 196px;
-    color: #F0F4FC;
-    padding: 1px 13px;
-    margin: 5px 0px;
-    
-}
-
-.acc-img {
-    color: #F0F4FC;
-    opacity: 0.9;
-    margin-left: 17px;
-}
-
-.acc-icon {
-    color: #F0F4FC;
-    opacity: 0.9;
-    margin-left: 22px;
-}
-
-.sidenav-set {
-    margin-bottom: 130px;
-}
-
-.dash-nav {
+.dash-content {
     display: flex;
     width: 100px;
 }
+
+.dash-content .dash-overview {
+    position: absolute;
+    width: 1020px;
+    height: 46px;
+    left: 292px;
+    top: 2px;
+    background: #F0F4FC;
+    display: flex;
+    padding: 10px;
+    font-family: 'Extatica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.dash-content .loan-app {
+    position: absolute;
+    width: 1008px;
+    height: 1816px;
+    left: 292px;
+    top: 90px;
+    padding: 10px;
+}
+

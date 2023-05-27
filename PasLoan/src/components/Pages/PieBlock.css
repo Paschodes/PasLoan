@@ -1,0 +1,84 @@
+.pieblock {
+    width: 872px;
+    border: 2px solid #BDE3FF;
+    border-radius: 16px;
+    height: 540px;
+    padding: 30px;
+    margin-top: 60px;
+    /* position: relative; */
+}
+
+.pie-head {
+    background: #3969DC;
+    border-radius: 8px;
+    padding: 13px 58px;
+    width: 288px;
+    height: 47px;
+    align-items: center;
+    display: flex;
+    margin-left: 293px;
+    justify-content: center;
+    
+}
+
+.piechat {
+    display: flex;
+    width: 850px;
+    padding: 15px;
+    margin-top: 20px;
+    /* position: absolute; */
+    justify-content: space-between;
+}
+
+.pie {
+    position: absolute;
+    /* margin-top: 30px;
+    margin-left: 20px; */
+}
+
+.pieshow-block {
+    position: absolute;
+    left: 475px;
+}
+
+.pie-show {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.pie-show p {
+    border-radius: 8px;
+    padding: 13px 58px;
+    width: 288px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    /* margin-left: 298px; */
+    text-align: center;
+    justify-content: center;
+}
+
+.pie-blue {
+    background: #3969DC;
+}
+.pie-green {
+    background: #00D43D;
+}
+.pie-wine {
+    background: #A90636;
+}
+.pie-red {
+    background: #D30744;
+}
+
+.pie-show span {
+    color: #FFFFFE;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #010E2A;
+    width: 85px;
+}

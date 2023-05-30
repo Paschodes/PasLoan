@@ -9,7 +9,7 @@
 
 .dash-content {
     display: flex;
-    width: 100px;
+    width: 100%;
 }
 
 .dash-content .dash-overview {

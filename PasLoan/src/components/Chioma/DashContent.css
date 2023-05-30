@@ -1,0 +1,71 @@
+.appdash-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    /* position: absolute; */
+    /* left: 360px;
+    top: 136px; */
+    width: 680px;
+    height: 1156px;
+}
+
+.applicants {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 680px;
+    height: 100px;
+}
+
+.applicant-block {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+    width: 216px;
+    height: 100px;
+    background: #FFFFFF;
+    
+}
+
+.applicant-block h3 {
+    width: 123px;
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    color: #0A0A0A;
+}
+
+.applicant-block p {
+    width: 52px;
+    height: 36px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.021em;
+    color: #0A0A0A;
+}
+
+.chi-blue {
+    border-bottom: 2px solid #4C4DDC;
+}
+
+.chi-yellow {
+    border-bottom: 2px solid #DCDB4C;
+}
+
+.chi-green {
+    border-bottom: 2px solid #4CDC93;
+}

@@ -1,0 +1,33 @@
+.app-sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 0;
+    /* position: absolute; */
+    width: 304px;
+    height: 1024px;
+    /* left: 0px;
+    top: calc(50% - 1024px/2); */
+    background: #FCFCFC;
+}
+
+.app-sidelinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 8px;
+    width: 224px;
+    height: 48px;
+    border-radius: 6px;
+}
+
+.sidelink-top {
+    margin-top: 40px;
+}
+
+.app-blue {
+    background: #4C4DDC;
+}

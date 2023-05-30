@@ -1,0 +1,59 @@
+.user-content {
+    width: 100%;
+}
+
+.user-lock-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 992px;
+    /* margin-left: 80px; */
+    padding: 30px 0px 15px 0px;
+}
+
+.user-block {
+    display: flex;
+    align-items: center;
+}
+
+.about-user {
+    margin-left: 11px;
+    background: #F0F4FC;
+    padding: 28px 132px 28px 34px;
+}
+
+.about-user h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 13px;
+    display: flex;
+}
+
+.about-user p {
+    color: #010E2A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.about-role {
+    margin-left: 15px;
+}
+
+.about-status {
+    margin-left: 5px;
+    color: #297F04;
+}
+
+.about-button {
+    width: 85px;
+    height: 40px;
+    border: 0.5px solid #010E2A;
+    border-radius: 8px;
+}

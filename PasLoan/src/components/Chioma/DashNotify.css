@@ -1,0 +1,81 @@
+.appdash-notify {
+    box-sizing: border-box;
+    /* display: flex; */
+    /* flex-direction: row;
+    align-items: flex-start; */
+    padding: 20px;
+    gap: 10px;
+    position: absolute;
+    width: 280px;
+    height: 1436px;
+    left: 1080px;
+    top: 136px;
+    background: #FFFFFF;
+    border-left: 1px solid #EFEFEF;
+}
+
+.notify-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 230px;
+    height: 28px;
+}
+
+.notify-head h1 {
+    width: 118px;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.017em;
+    color: #000000;
+}
+
+.notify-head a {
+    width: 45px;
+    height: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #4C4DDC;
+}
+
+.notify-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 155px;
+    height: 40px;
+    margin-top: 22px;
+}
+
+.notify-nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 4px;
+    gap: 8px;
+}
+
+.notify-nav .notifynav-all {
+    box-sizing: border-box;
+    width: 68px;
+    height: 40px;
+    border-bottom: 2px solid #4C4DDC;
+}
+
+.notify-nav .notifynav-un {
+    width: 63px;
+    height: 40px;
+}

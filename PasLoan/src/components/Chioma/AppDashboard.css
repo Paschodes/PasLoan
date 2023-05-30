@@ -1,0 +1,21 @@
+.app-dashboard {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    position: absolute;
+    height: 1000px;
+    left: 0px;
+}
+
+
+
+.appdash-container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* gap: 43px; */
+    width: 1000px;
+    height: 1000px;
+    margin-top: 135px;
+}
+

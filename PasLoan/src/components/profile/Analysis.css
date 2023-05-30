@@ -1,0 +1,23 @@
+.predictionBlock {
+    display: flex;
+}
+
+.prediction-blue {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 190px;
+    padding: 10px;
+    /* border: 2px solid blue; */
+    background: #F0F4FC;
+    border-bottom: 5px solid #0D99FF;
+    margin-right: 30px;
+}
+
+.dataBlue p, .dataGreen p, .dataYellow p, .dataRed p {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 7px;
+}

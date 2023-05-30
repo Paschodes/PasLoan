@@ -8,6 +8,7 @@ import ContentPasteOutlinedIcon from '@mui/icons-material/ContentPasteOutlined';
 import SettingsApplicationsOutlinedIcon from '@mui/icons-material/SettingsApplicationsOutlined';
 import ContactSupportOutlinedIcon from '@mui/icons-material/ContactSupportOutlined';
 import './SideNav.css'
+import { Link } from 'react-router-dom';
 
 
 const SideNav = () => {
@@ -15,15 +16,16 @@ const SideNav = () => {
     <div className='side-nav'>
             <div className='sidenav-links'>
               <img src={dashboard} alt="dashboard" className='acc-img'/>
-              <a href="/" className='sidenav-links'>Dashboard</a>
+              <Link to='/dashboard' className='sidenav-links'>Dashboard</Link>
             </div>
             <div className='sidenav-links'>
               <AccountBalanceOutlinedIcon className='acc-icon'/>
-              <a href="/" className='sidenav-links'>Loans</a>
+              <Link to='/loans' className='sidenav-links'>Loans</Link>
             </div>
             <div className='sidenav-links'>
               <AccountCircleOutlinedIcon className='acc-icon'/>
-              <a href="/" className='sidenav-links'>Profile</a>
+              <Link to='/profile' className='sidenav-links'>Profile</Link>
+              <a href="/" ></a>
             </div>
             <div className='sidenav-links'>
               <EmailOutlinedIcon className='acc-icon'/>

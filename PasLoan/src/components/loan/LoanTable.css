@@ -1,0 +1,64 @@
+.loantable-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+    position: absolute;
+    width: 1078px;
+    height: 40px;
+    left: 260px;
+    top: 215px;
+    border: 0.5px solid #000000;
+}
+
+.loantable-head th {
+    width: 154.33px;
+    font-family: 'Extatica';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #010E2A;
+    display: flex;
+    align-items: center;
+}
+
+
+.loantable-head .table-check, .loantable-data .table-check {
+    width: 20px;
+}
+
+.loantable-head .check-icon, .loantable-data .check-icon {
+    padding: 0px 4px;
+    /* margin: 0px -20px -4px 4px; */
+    border-radius: 3px;
+}
+
+.loantable-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+    position: relative;
+    width: 1064px;
+    height: 40px;
+    left: -17px;
+    top: 265px;
+    background: #F0F4FC;
+}
+
+
+.loantable-data td {
+    width: 152px;
+    height: 18px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #010E2A;
+}

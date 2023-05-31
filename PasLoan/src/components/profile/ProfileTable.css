@@ -1,0 +1,66 @@
+.profiletable-head {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+    /* position: absolute; */
+    /* left: 0px;
+    top: 0px; */
+    width: 1064px;
+    height: 40px;
+    border: 0.5px solid #000000;
+    margin-top: 30px;
+}
+
+.profiletable-head th {
+    width: 154.33px;
+    font-family: 'Extatica';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #010E2A;
+    display: flex;
+    align-items: center;
+}
+
+.profiletable-head .table-check, .profile-data .table-check {
+    width: 20px;
+}
+
+.profiletable-head .check-icon, .profiletable-data .check-icon {
+    padding: 0px 4px;
+    /* margin: 0px -20px -4px 4px; */
+    border-radius: 3px;
+}
+
+.profiletable-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+    /* position: absolute; */
+    /* left: 0px;
+    top: 320px; */
+    width: 1064px;
+    height: 40px;
+    background: #F0F4FC;
+    margin-top: 10px;
+    
+}
+
+.profiletable-data td {
+    width: 152px;
+    height: 18px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #010E2A;
+}

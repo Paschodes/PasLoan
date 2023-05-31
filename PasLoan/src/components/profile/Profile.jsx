@@ -4,6 +4,8 @@ import SideNav from '../Pages/SideNav';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import './Profile.css'
 import { User } from './User';
+import Analysis from './Analysis';
+import ProfileTable from './ProfileTable';
 
 const Profile = () => {
   return (
@@ -14,13 +16,18 @@ const Profile = () => {
             <SideNav />
 
             <div className='user-content'>
-                <div className='profile-nav'>
-                    <a href='/'>Home</a>
-                    <KeyboardArrowRightIcon className='profilenav-icon'/>
-                    <a href='/'>Profile</a>
-                </div>
+              <div className='profile-nav'>
+                  <a href='/'>Home</a>
+                  <KeyboardArrowRightIcon className='profilenav-icon'/>
+                  <a href='/'>Profile</a>
+              </div>
 
-                <User />
+              <User />
+              <Analysis />
+
+              <a href="/" className='content-clients'>All Clients</a>
+
+              <ProfileTable />
             </div>
         </div>
     </div>

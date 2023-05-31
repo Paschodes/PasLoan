@@ -2,6 +2,7 @@ import React from 'react'
 import './AppTable.css'
 import appdata from './appdata';
 
+
 const AppTable = () => {
   return (
     <div>

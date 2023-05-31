@@ -10,13 +10,6 @@ export const User = () => {
     <div className='user-lock-container'>
         <div className='user-block'>
             <div>
-                {/* <Avatar
-                    className='avatar'
-                    alt="user profile"
-                    src= {profile}
-                    sx={{ width: 100, height: 100}}
-                 /> */}
-                
                 <Image
                     borderRadius='full'
                     boxSize='150px'

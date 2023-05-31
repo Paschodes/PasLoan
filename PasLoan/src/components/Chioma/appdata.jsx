@@ -9,6 +9,7 @@ const appdata = [
         status: 'Approved',
         action: 'Download',
     },
+
     {
         id: 2,
         name: 'Tofunmi Idowu',

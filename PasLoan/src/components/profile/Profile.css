@@ -24,3 +24,22 @@
     opacity: 0.7;
     margin: 0 3px;
 }
+
+.content-clients {
+    /* position: absolute; */
+    width: 92px;
+    height: 19px;
+    /* left: 260px;
+    top: 512px; */
+    font-family: 'Extatica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+

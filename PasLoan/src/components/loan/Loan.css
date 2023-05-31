@@ -23,6 +23,18 @@
 .loan-nav .all-loannav {
     width: 59px;
 }
+.loan-nav .pen-loannav {
+    width: 128px;
+}
+.loan-nav .active-loannav {
+    width: 150px;
+}
+.loan-nav .due-loannav {
+    width: 72px;
+}
+.loan-nav .ex-loannav {
+    width: 105px;
+}
 
 .loan-nav .loannav-icon {
     width: 11px;

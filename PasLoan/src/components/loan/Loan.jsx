@@ -4,17 +4,15 @@ import SideNav from '../Pages/SideNav';
 import '../pages/Dashboard.css'
 import './Loan.css'
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 import LoanTable from './LoanTable';
 import { Link } from 'react-router-dom';
+import LoanInput from './LoanInput';
 
 
 const Loan = () => {
   return (
     <div>
         <Header />
-        
         
         <div className='dash-container'>
             <SideNav />
@@ -25,36 +23,20 @@ const Loan = () => {
                     <ArrowForwardIosOutlinedIcon className='loannav-icon'/>
                     <Link to='/loans'>Loans</Link>
                     <ArrowForwardIosOutlinedIcon className='loannav-icon'/>
-                    <a href="/" className='all-loannav'>All Loans</a>
+                    <Link to='/loans' className='all-loannav'>All Loans</Link>
                 </div>
 
-                <div className='loan-input-btn'>
-                    <div className='loan-input'>
-                        <div className='loan-search'>
-                            <SearchOutlinedIcon className='loaninput-icon'/>
-                            <input type="text" placeholder='Search'/>
-                        </div>
-
-                        <div className='loan-filter'>
-                            <input type="text" placeholder='Filter'/>
-                            <FilterAltOutlinedIcon />
-                        </div>
-                    </div>
-                    <div className='loan-btn'>
-                        <button className='loan-print'>Print</button>
-                        <button className='loan-export'><span>Export Data</span></button>
-                    </div>
-                </div>
+                <LoanInput />
 
                 <div className='loan-links'>
-                    <a href="/" className='all-loanlink'>All loans</a>
-                    <a href="/">New Applications</a>
-                    <a href="/">Pending</a>
-                    <a href="/">Active</a>
-                    <a href="/">Due loan</a>
-                    <a href="/">Extended</a>
-                    <a href="/">Defaulted</a>
-                    <a href="/">Closed</a>
+                    <Link to='/loans' className='all-loanlink'>All loans</Link>
+                    <Link to='/newapplication'>New Applications</Link>
+                    <Link to='/pending'>Pending</Link>
+                    <Link to='/active'>Active</Link>
+                    <Link to='/due-loan'>Due loan</Link>
+                    <Link to='/extend'>Extended</Link>
+                    <Link to='/default'>Defaulted</Link>
+                    <Link to='/closed'>Closed</Link>
                 </div>
 
                 <LoanTable />

@@ -16,7 +16,7 @@
     width: 154.33px;
     font-family: 'Extatica';
     font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     color: #010E2A;
@@ -47,6 +47,7 @@
     left: -17px;
     top: 265px;
     background: #F0F4FC;
+    margin-top: 10px;
 }
 
 
@@ -61,4 +62,19 @@
     display: flex;
     align-items: center;
     color: #010E2A;
+}
+
+.loantable-data .tddown-arrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 8px;
+    width: 168px;
+    height: 24px;
+    justify-content: space-between;
+}
+
+.tddown-arrow .downarrow-icon {
+    width: 16px;
+    height: 16px;
 }

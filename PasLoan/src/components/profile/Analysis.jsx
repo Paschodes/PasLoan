@@ -2,17 +2,19 @@ import React from 'react'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import './Analysis.css'
 
-export const Percentage = () => {
+
+export const Analysis = () => {
   return (
       
     <div className='predictionBlock'>
+
             <div className='prediction-blue'>
                <div className='dataBlue'>
                   <p>New Clients</p>
                   <div className='percentageBlock'>
                     <KeyboardArrowUpIcon className='blue'/>
                      <p>110
-                        <span className='percent'>%</span>
+                        <span className='predict-percent'>%</span>
                      </p>
                   </div>
                </div>
@@ -27,7 +29,7 @@ export const Percentage = () => {
                   <div className='percentageBlock'>
                      <KeyboardArrowUpIcon className='green'/>
                      <p>60
-                        <span className='percent'>%</span>
+                        <span className='predict-percent'>%</span>
                      </p>
                   </div>
                </div>
@@ -42,7 +44,7 @@ export const Percentage = () => {
                   <div className='percentageBlock'>
                      <KeyboardArrowUpIcon className='yellow'/>
                      <p>30
-                        <span className='percent'>%</span>
+                        <span className='predict-percent'>%</span>
                      </p>
                   </div>
                </div>
@@ -57,7 +59,7 @@ export const Percentage = () => {
                   <div className='percentageBlock'>
                      <KeyboardArrowUpIcon className='red'/>
                      <p>30
-                        <span className='percent'>%</span>
+                        <span className='predict-percent'>%</span>
                      </p>
                    </div>
                 </div>
@@ -72,7 +74,7 @@ export const Percentage = () => {
                   <div className='percentageBlock'>
                      <KeyboardArrowUpIcon className='red'/>
                         <p>30
-                           <span className='percent'>%</span>
+                           <span className='predict-percent'>%</span>
                         </p>
                     </div>
                   </div>
@@ -84,3 +86,5 @@ export const Percentage = () => {
       
    )
 }
+
+export default Analysis;

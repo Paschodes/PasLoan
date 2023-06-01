@@ -37,7 +37,7 @@ const SideNav = () => {
             </div>
             <div className='sidenav-links'>
               <PeopleAltOutlinedIcon className='acc-icon'/>
-              <a href="/" className='sidenav-links'>Clients</a>
+              <Link to='/clients' className='sidenav-links'>Clients</Link>
             </div>
             <div className='sidenav-links sidenav-set'>
               <SettingsApplicationsOutlinedIcon className='acc-icon'/>

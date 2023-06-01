@@ -1,0 +1,70 @@
+.client-thead {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+    position: absolute;
+    width: 1076px;
+    height: 40px;
+    left: 260px;
+    top: 145px;
+    border: 0.5px solid #000000;
+}
+
+.client-thead th {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px 0px 0px;
+    gap: 16px;
+    width: 239px;
+    height: 24px;
+}
+
+.client-thead .table-check, .client-tdata .table-check {
+    width: 20px;
+}
+
+.client-thead .check-icon, .client-tdata .check-icon {
+    padding: 0px 4px;
+    border-radius: 3px;
+}
+
+.client-tdata {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+    position: relative;
+    width: 1064px;
+    height: 48px;
+    left: -18px;
+    top: 208px;
+}
+
+.client-tdata td {
+    width: 224px;
+    height: 18px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.client-tdata .status-dot {
+    width: 272px;
+    height: 32px;
+    gap: 20px;
+}
+
+.client-tdata .status-dot .dot {
+    width: 11px;
+    height: 32px;
+}

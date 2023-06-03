@@ -1,0 +1,52 @@
+.pass-pop {
+    box-sizing: border-box;
+    position: absolute;
+    width: 729px;
+    height: 473px;
+    left: 542px;
+    top: 105px;
+    background: #FFFFFF;
+    border: 1px solid #F0F4FC;
+    border-radius: 16px;
+}
+
+.passpop-icon {
+    position: absolute;
+    left: 47.23%;
+    bottom: 56.04%;
+    color: #297F04;
+}
+
+.pass-pop p {
+    position: absolute;
+    left: 31%;
+    right: 31%;
+    top: 48.63%;
+    bottom: 44.19%;
+    font-family: 'Extatica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #010E2A;
+    justify-content: center;
+}
+
+.pass-pop a {
+    position: absolute;
+    width: 60px;
+    height: 19px;
+    left: calc(50% - 60px/2 + 0.5px);
+    top: 288px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0744D3;
+}

@@ -20,6 +20,7 @@ import ExtendTable from './components/loan/ExtendTable';
 import DefaultTable from './components/loan/DefaultTable';
 import CloseTable from './components/loan/CloseTable';
 import Clients from './components/clients/Clients';
+import ForgotPass from './components/entry/ForgotPass';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Route path='/dashboard' element={<Dashboard />}/>
         <Route path='/profile' element={<Profile />}/>
         <Route path='/clients' element={<Clients />}/>
+        <Route path='/reset-password' element={<ForgotPass />}/>
 
         <Route path='/loans' element={<Loan />}/>
         <Route path='/newapplication' element={<NewappTable />}/>

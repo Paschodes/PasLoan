@@ -4,6 +4,7 @@ import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import { Image } from '@chakra-ui/react';
 import './Header.css'
+// import DropMsg from '../dropdowns/DropMsg';
 
 
 const Header = () => {
@@ -13,6 +14,7 @@ const Header = () => {
         <nav className='header'>
             <LoginLogo />
             <div className='header-icons'>
+              {/* <DropMsg /> */}
                 <MailOutlineOutlinedIcon className='header-icon'/>
                 <NotificationsNoneIcon className='header-icon'/>
                 

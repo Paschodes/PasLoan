@@ -1,0 +1,102 @@
+.reset {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+    height: 620px;
+    background: #F0F4FC;
+}
+
+.reset-content {
+    margin-top: 25px;
+}
+
+.reset-h1 {
+    position: absolute;
+    width: 327px;
+    height: 24px;
+    left: 755px;
+    top: 200px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.reset-form input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 17px;
+    width: 410px;
+    /* height: 72px; */
+    background: #FFFFFE;
+    border-radius: 8px;
+}
+
+.reset-form #email {
+    position: absolute;
+    left: 720px;
+    top: 260px;
+}
+
+#newPassword{
+    position: absolute;
+    left: 720px;
+    top: 333px;
+}
+
+#confirmPassword {
+    position: absolute;  
+    left: 720px;
+    top: 407px;
+}
+
+.reset-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    position: absolute;
+    width: 410px;
+    height: 72px;
+    left: calc(52% - 503px/2 + 262px);
+    top: 505px;
+    background: #010E2A;
+    border-radius: 8px;
+}
+
+.reset-btn span {
+    width: 492px;
+    height: 24px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* display: flex;
+    align-items: center; */
+    text-align: center;
+    color: #FFFFFE;
+}
+
+.reset-email-error {
+    position: absolute;
+    top: 310px;
+    left: 735px;
+}
+.reset-new-error {
+    position: absolute;
+    top: 382px;
+    left: 735px;
+}
+.reset-confirm-error {
+    position: absolute;
+    top: 457px;
+    left: 735px;
+}

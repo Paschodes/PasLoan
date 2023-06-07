@@ -16,7 +16,7 @@ const ForgotPass = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [resetInput, setResetInput] = useState(RESETINIT);
     const [errorUI, setErrorUI] = useState(null);
-    const [showPass, setShowPass] = useState('password')
+    // const [showPass, setShowPass] = useState('password')
 
 
     const VALIDATION = {

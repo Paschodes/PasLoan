@@ -77,4 +77,32 @@
 .tddown-arrow .downarrow-icon {
     width: 16px;
     height: 16px;
+    cursor: pointer;
+}
+
+
+
+.icondrop {
+    position: absolute;
+    width: 182px;
+    height: 87px;
+    background: #F0F4FC;
+    border-radius: 8px;
+    /* z-index: 999; */
+}
+
+.icondrop-select {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 8px;
+    gap: 10px;
+    position: absolute;
+    width: 153px;
+    height: 32px;
+    left: calc(50% - 153px/2);
+    top: calc(50% - 32px/2 + 0.5px);
+    border: 1px solid #010E2A;
+    border-radius: 16px;
 }

@@ -64,3 +64,17 @@
     align-items: center;
     color: #010E2A;
 }
+
+.profiletable-data .table-check {
+    width: 20px;
+}
+
+.profiletable-data .tddown-arrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 8px;
+    width: 168px;
+    height: 24px;
+    justify-content: space-between;
+}

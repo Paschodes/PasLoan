@@ -1,24 +1,25 @@
 import React from 'react'
 import LoginLogo from '../../LoginLogo';
-import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
-import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import { Image } from '@chakra-ui/react';
 import './Header.css'
+import DropMsg from './dropdowns/DropMsg';
 // import DropMsg from '../dropdowns/DropMsg';
+import '../Pages/dropdowns/Dropdown.css'
+import DropNotify from './dropdowns/DropNotify';
+import DropImg from './dropdowns/DropImg';
 
 
 const Header = () => {
+  
   
   return (
     <div>
         <nav className='header'>
             <LoginLogo />
             <div className='header-icons'>
-              {/* <DropMsg /> */}
-                <MailOutlineOutlinedIcon className='header-icon'/>
-                <NotificationsNoneIcon className='header-icon'/>
+              <DropMsg />
+              <DropNotify />
                 
-                <Image borderRadius='full' boxSize='35px' margin='0' src='https://bit.ly/dan-abramov' alt='Dan Abramov'/>
+              <DropImg />
                 
             </div>
         </nav>

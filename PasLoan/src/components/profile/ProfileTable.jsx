@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ProfileTable.css'
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import data from '../loan/LoanData';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import CloseIcon from '@mui/icons-material/Close';
 
 const ProfileTable = () => {
+    const [iconDrop, setIconDrop] = useState(false);
   return (
     <div>
         <table>
@@ -29,7 +32,26 @@ const ProfileTable = () => {
                         <td>{data.LastName}</td>
                         <td>{data.applicationDate}</td>
                         <td>{data.update}</td>
-                        <td>{data.status}</td>
+                        <td className='tddown-arrow'>
+                            {data.status}
+                            <span onClick={() => setIconDrop(true)}>
+                                <KeyboardArrowDownIcon className='downarrow-icon'/>
+                            </span>
+                            {iconDrop && 
+                            <div className='icondrop'>
+                                <button className='imgdrop-close' onClick={() => setIconDrop(false)}><CloseIcon style={{width: '16px', height: '16px'}}/></button>
+                                <select className='icondrop-select' name="doc" id="doc">
+                                    <option value="" disabled selected hidden>Select Format</option>
+                                    <option value="application">New Application</option>
+                                    <option value="pending">Pending</option>
+                                    <option value="active">Active</option>
+                                    <option value="due">Due for Payment</option>
+                                    <option value="extend">Extended</option>
+                                    <option value="default">Defaulted</option>
+                                    <option value="close">Closed</option>
+                                </select>
+                            </div>}
+                        </td>
                     </tr>
                     )
                 })}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../pages/Dashboard.css'
 import Header from '../Pages/Header';
 import SideNav from '../Pages/SideNav';
@@ -10,8 +10,10 @@ import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import data from './LoanData';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import CloseIcon from '@mui/icons-material/Close';
 
 const ExtendTable = () => {
+    const [iconDrop, setIconDrop] = useState(false);
   return (
     <div>
         <Header />
@@ -68,7 +70,23 @@ const ExtendTable = () => {
                                 <td>{data.update}</td>
                                 <td className='tddown-arrow'>                             
                                     {data.extend}
-                                    <KeyboardArrowDownIcon className='downarrow-icon'/>                                   
+                                    <span onClick={() => setIconDrop(true)}>
+                                        <KeyboardArrowDownIcon className='downarrow-icon'/>
+                                    </span>
+                                    {iconDrop && 
+                                        <div className='icondrop'>
+                                            <button className='imgdrop-close' onClick={() => setIconDrop(false)}><CloseIcon style={{width: '16px', height: '16px'}}/></button>
+                                            <select className='icondrop-select' name="doc" id="doc">
+                                                <option value="" disabled selected hidden>Select Format</option>
+                                                <option value="application">New Application</option>
+                                                <option value="pending">Pending</option>
+                                                <option value="active">Active</option>
+                                                <option value="due">Due for Payment</option>
+                                                <option value="extend">Extended</option>
+                                                <option value="default">Defaulted</option>
+                                                <option value="close">Closed</option>
+                                            </select>
+                                    </div>}                                         
                                 </td>
                             </tr>
                             )

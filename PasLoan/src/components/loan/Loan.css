@@ -175,3 +175,50 @@
     border-left: 0;
 }
 
+
+
+.loan-drop {
+    position: absolute;
+    z-index: 999;
+    width: 156px;
+    height: 88px;
+    background: #FFFFFE;
+    border-radius: 8px;
+    /* right: 10px; */
+}
+.loandrop-export{
+    right: 10px;
+}
+.loandrop-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+}
+.loandrop-down {
+    position: absolute;
+    width: 149px;
+    height: 53px;
+    /* left: 2px;
+    top: 32px; */
+    background: #FFFFFE;
+    border-radius: 8px;
+}
+.loandrop-select {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 8px;
+    gap: 10px;
+    position: absolute;
+    width: 139px;
+    height: 32px;
+    left: calc(50% - 139px/2);
+    top: calc(50% - 32px/2 + 0.5px);
+    border: 1px solid #000000;
+    border-radius: 16px;
+}

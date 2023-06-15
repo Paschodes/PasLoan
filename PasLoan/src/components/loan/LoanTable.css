@@ -29,11 +29,10 @@
     width: 20px;
 }
 
-.loantable-head .check-icon, .loantable-data .check-icon {
+/* .loantable-head .check-icon, .loantable-data .check-icon {
     padding: 0px 4px;
-    /* margin: 0px -20px -4px 4px; */
     border-radius: 3px;
-}
+} */
 
 .loantable-data {
     display: flex;
@@ -46,9 +45,10 @@
     height: 40px;
     left: -17px;
     top: 265px;
-    background: #F0F4FC;
+    /* background: #F0F4FC; */
     margin-top: 10px;
 }
+
 
 
 .loantable-data td {

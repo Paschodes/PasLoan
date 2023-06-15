@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import logo from '../../assets/applogo.svg'
-import build from '../../assets/building.svg'
+import side from '../../assets/sideImg.png'
 import './SignUp.css'
 import { Link, useNavigate } from 'react-router-dom'
+import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
+import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 
 
 const INITINPUT = {firstname: '', lastname: '', role: '', number: '', email: '', password: ''};
@@ -11,6 +13,12 @@ const SignUp = () => {
     const [signInput, setSignInput] = useState(INITINPUT);
     const navigate = useNavigate();
     const [errorUI, setErrorUI] = useState(null);
+
+    const [passVisible, setPassVisible] = useState(false);
+  
+    const togglePassVisibility = () => {
+        setPassVisible((prevVisisble) => !prevVisisble);
+    };
 
     const VALIDATION = {
         firstname: [
@@ -43,13 +51,14 @@ const SignUp = () => {
                 message: 'Invalid name.',
             },
             {
-                isValid: (value) => /^\S*$/.test(value),
-                message: 'Is not a valid role'
+                isValid: (value) => !!value,
+                message: 'Is required.',
             },
-            {
-              isValid: (value) => !!value,
-              message: 'Is required.',
-            },
+            // {
+            //     isValid: (value) => /^\S*$/.test(value),
+            //     message: 'Is not a valid role'
+            // },
+            
         ],
         email: [
             {
@@ -117,7 +126,7 @@ const SignUp = () => {
   return (
     <div className='signup-container'>
         <div className='signup'>
-            <img src={build} alt="building" className='build-img'/>           
+            <img src={side} alt="building" className='build-img'/>           
 
             <div className='signup-content'>
                 <img className='logo-img' src={logo} alt="log" />
@@ -175,7 +184,10 @@ const SignUp = () => {
                     </div>
                     <div className='signup-labels'>
                         <label htmlFor="password">Password</label>
-                        <input type="password" id='password' value={signInput.password} placeholder='Password' onChange={handleChange}/>
+                        <input type={passVisible ? 'text' : 'password'} id='password' value={signInput.password} 
+                        placeholder='Password' onChange={handleChange}/>
+                        {passVisible ? (<VisibilityOutlinedIcon className='signPasseye' onClick={togglePassVisibility}/>) 
+                        : (<VisibilityOffOutlinedIcon className='signPasseye' onClick={togglePassVisibility}/>)}
                         <div className='sign-error'>
                           {errorUI?.password?.length ? (
                               <span style={{ color: 'red' }}>

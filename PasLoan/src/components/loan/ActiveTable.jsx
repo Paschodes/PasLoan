@@ -14,6 +14,37 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const ActiveTable = () => {
     const [iconDrop, setIconDrop] = useState(false);
+
+    const [selectAll, setSelectAll] = useState(false);
+    const [checkdItems, setCkeckdItems] = useState({});
+
+    const handleSelectAll = () => {
+        const newCheckdItems = {};
+        if (!selectAll) {
+            data.forEach((data) => {
+                newCheckdItems[data.id] = true;
+            });
+        }
+        setCkeckdItems(newCheckdItems);
+        setSelectAll(!selectAll);
+    };
+
+    const handleCheckboxChange = (event) => {
+        const itemId = event.target.name;
+        const isChecked = event.target.checked;
+
+        setCkeckdItems ((prevState) => {
+            const updatedItems = {...prevState};
+            updatedItems[itemId] = isChecked;
+
+            return updatedItems;
+        });
+
+        if (!isChecked) {
+            setSelectAll(false);
+        }
+    };
+
   return (
     <div>
         <Header />
@@ -49,7 +80,9 @@ const ActiveTable = () => {
                 <table>
                     <thead>
                         <tr className='loantable-head'>
-                            <th className='table-check'><CheckBoxIcon className='check-icon'/></th>
+                            <th className='table-check'>
+                                <input type="checkbox" checked={selectAll} onChange={handleSelectAll}/>
+                            </th>
                             <th>Case Number</th>
                             <th>First Name</th>
                             <th>Last Name</th>
@@ -61,8 +94,10 @@ const ActiveTable = () => {
                     <tbody>
                         {data.map((data) => {
                             return (
-                            <tr key={data.id} className='loantable-data'>
-                                <td className='table-check'><CheckBoxOutlineBlankIcon className='check-icon'/></td>
+                            <tr key={data.id} style={{background: checkdItems[data.id] ? '#F0F4FC' : 'white'}} className='loantable-data'>
+                                <td className='table-check'>
+                                    <input type="checkbox" name={data.id} checked={checkdItems[data.id] || false} onChange={handleCheckboxChange}/>
+                                </td>
                                 <td>{data.caseNumber}</td>
                                 <td>{data.firstName}</td>
                                 <td>{data.LastName}</td>

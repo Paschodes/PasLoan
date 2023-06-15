@@ -1,5 +1,5 @@
 import React from 'react'
-import login from '../../assets/loginImage.jpg'
+import side from '../../assets/sideImg.png'
 import { Link } from 'react-router-dom'
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import './Confirm.css'
@@ -8,7 +8,7 @@ import LoginLogo from '../../LoginLogo';
 const Confirm = () => {
   return (
     <div className='confirm'>
-        <img src={login} alt="login-img" className='login-img'/>
+        <img src={side} alt="login-img" className='login-img'/>
         <div className='confirm-content'>
             <LoginLogo />
             <div className='confirm-info'>

@@ -28,16 +28,16 @@ const SideNav = () => {
               <a href="/" ></a>
             </div>
             <div className='sidenav-links'>
+              <PeopleAltOutlinedIcon className='acc-icon'/>
+              <Link to='/clients' className='sidenav-links'>Clients</Link>
+            </div>
+            <div className='sidenav-links'>
               <EmailOutlinedIcon className='acc-icon'/>
               <a href="/" className='sidenav-links'>messages</a>
             </div>
             <div className='sidenav-links'>
               <ContentPasteOutlinedIcon className='acc-icon'/>
               <a href="/" className='sidenav-links'>Reports</a>
-            </div>
-            <div className='sidenav-links'>
-              <PeopleAltOutlinedIcon className='acc-icon'/>
-              <Link to='/clients' className='sidenav-links'>Clients</Link>
             </div>
             <div className='sidenav-links sidenav-set'>
               <SettingsApplicationsOutlinedIcon className='acc-icon'/>

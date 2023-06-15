@@ -9,17 +9,18 @@
     column-gap: 10px;
     grid-template-columns: 1fr 2fr;
     position: relative;
-    height: 1059px;
+    height: 1024px;
 
 }
 
 .build-img {
-    height: 627px;
+    /* height: 627px; */
+    height: 1024;
 }
 
-/* .signup-content {
-    padding-top: 303px;
-} */
+.signup-content {
+    height: 1024;
+}
 
 .logo-img {
     width: 296px;
@@ -123,4 +124,10 @@
 
 .sign-error {
     margin-top: -18px;
+}
+
+.signPasseye {
+    position: absolute;
+    left: 81.31%;
+    top: 73.1%;
 }

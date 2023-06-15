@@ -104,6 +104,7 @@
     display: flex;
     align-items: center;
     color: #010E2A;
+    border: 0;
 }
 
 .loan-btn {

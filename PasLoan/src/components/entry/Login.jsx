@@ -1,18 +1,27 @@
 import React, { useState } from 'react'
-import login from '../../assets/loginImage.jpg'
+import side from '../../assets/sideImg.png'
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css'
 import LoginLogo from '../../LoginLogo';
+import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
+import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 
 
-const INITINPUT = {username: '', password: ''}
+
+const INPUT = {username: '', password: ''}
 
 const Login = () => {
 
-  const [loginInput, setLoginInput] = useState(INITINPUT);
+  const [loginInput, setLoginInput] = useState(INPUT);
   const [errorUI, setErrorUI] = useState(null);
 
   const navigate = useNavigate();
+
+  const [passVisible, setPassVisible] = useState(false);
+  
+  const togglePassVisibility = () => {
+    setPassVisible((prevVisisble) => !prevVisisble);
+  };
 
   const VALIDATION = {
     username: [
@@ -70,7 +79,7 @@ const Login = () => {
     const hasErrors = Object.values(errorFields).flat().length > 0;
     if (hasErrors) return setErrorUI({ ...errorFields });
     console.log(`${loginInput.username} ${loginInput.password}`);
-    setLoginInput(INITINPUT);
+    setLoginInput(INPUT);
     navigate('/dashboard');
   }
 
@@ -78,7 +87,7 @@ const Login = () => {
   return (
     <div>
         <div className='login'>
-            <img src={login} alt="login-img" className='login-img'/>
+            <img src={side} alt="login-img" className='login-img'/>
 
             <div className='login-content'>
                 <LoginLogo />
@@ -95,7 +104,10 @@ const Login = () => {
                           ) : null}
                         </div>
 
-                        <input type="password" id='password' placeholder='Password' value={loginInput.password} onChange={handleChange}/>
+                        <input type={passVisible ? 'text' : 'password'} id='password'
+                         placeholder='Password' value={loginInput.password} onChange={handleChange}/>
+                        {passVisible ? (<VisibilityOutlinedIcon className='passOpeneye' onClick={togglePassVisibility}/>) 
+                        : (<VisibilityOffOutlinedIcon className='passOpeneye' onClick={togglePassVisibility}/>)}
                         <div className='error'>
                           {errorUI?.password?.length ? (
                               <span style={{ color: 'red' }}>
@@ -103,7 +115,7 @@ const Login = () => {
                               </span>
                           ) : null}
                         </div>
-                        <Link to='/reset-password'>Forgot Password</Link>
+                        <Link to='/forgot-password'>Forgot Password</Link>
                     </div>
 
                     <button className='login-btn'>Log In</button>

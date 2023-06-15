@@ -5,14 +5,14 @@ import './Otp.css'
 import { Link } from 'react-router-dom'
 import LoginLogo from '../../LoginLogo'
 
-const Otp = () => {
+const ResetOtp = () => {
   return (
     <div className='otp'>
         <img src={side} alt="login-img" className='login-img'/>
         <div className='otp-content'>
             <LoginLogo />
             <div className='otp-down'>
-                <h2>Please enter your 4 digit token pin</h2>
+                <h2>Enter the token sent to your email</h2>
                 <div className='pin'>
                     <HStack >
                         <PinInput otp>
@@ -24,7 +24,7 @@ const Otp = () => {
                     </HStack>
                 </div>
 
-                <button className='otp-btn'><Link to='/dashboard'>Proceed to the Dashboard</Link></button>
+                <button className='otp-btn'><Link to='/reset-password'>Reset Password</Link></button>
             </div>
             
             
@@ -33,4 +33,4 @@ const Otp = () => {
   )
 }
 
-export default Otp;
+export default ResetOtp;

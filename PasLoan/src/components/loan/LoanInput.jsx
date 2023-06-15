@@ -2,10 +2,35 @@ import React, { useState } from 'react'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 import CloseIcon from '@mui/icons-material/Close';
+import data from './LoanData';
 
+const INIT = {search: '', filter: ''}
 const LoanInput = () => {
     const [printDrop, setPrintDrop] = useState(false);
     const [exportDrop, setExportDrop] = useState(false);
+
+    
+    const [input, setInput] = useState(INIT);
+
+    const keys = ['caseNumber', 'firstName', 'LastName', 'applicationDate', 'update', 'status']
+
+    const searchData = () => {
+        return data.filter((datas) => 
+        keys.some((key) => datas[key].toLowerCase().includes(input))
+        );
+    };
+
+    const handleChange = (e) => {
+        const {id, value} = e.target;
+        setInput(prevState => ({
+            ...prevState,
+            [id]: value
+        }));
+        console.log({id, value})
+        searchData();
+    }
+
+    
 
     
   return (
@@ -13,10 +38,10 @@ const LoanInput = () => {
         <div className='loan-input'>
             <div className='loan-search'>
                 <SearchOutlinedIcon className='loaninput-icon'/>
-                <input type="text" placeholder='Search'/>
+                <input type="text" id='search' placeholder='Search' value={input.search} onChange={handleChange}/>
             </div>
             <div className='loan-filter'>
-                <input type="text" placeholder='Filter'/>
+                <input type="text" id='filter' placeholder='Filter'value={input.filter} onChange={handleChange}/>
                 <FilterAltOutlinedIcon />
             </div>
         </div>

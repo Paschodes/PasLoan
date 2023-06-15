@@ -9,6 +9,7 @@
 
 .login-img {
     height: 620px;
+    width: 498px;
 }
 
 .login-content {
@@ -84,4 +85,10 @@
     line-height: 24px;
     margin-left: 3px;
     color: #0744D3;
+}
+
+.passOpeneye {
+    position: absolute;
+    left: 78.31%;
+    top: 53.31%;
 }

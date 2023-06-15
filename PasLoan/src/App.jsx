@@ -20,7 +20,9 @@ import ExtendTable from './components/loan/ExtendTable';
 import DefaultTable from './components/loan/DefaultTable';
 import CloseTable from './components/loan/CloseTable';
 import Clients from './components/clients/Clients';
+import ResetPass from './components/entry/ResetPass';
 import ForgotPass from './components/entry/ForgotPass';
+import ResetOtp from './components/entry/ResetOtp';
 
 function App() {
 
@@ -29,13 +31,15 @@ function App() {
     <ChakraProvider>
       <Routes>
         <Route path='/' element={<Login />} />
-        <Route path='signup' element={<SignUp />}/>
+        <Route path='/signup' element={<SignUp />}/>
         <Route path='/confirm' element={<Confirm />}/>
         <Route path='/otp' element={<Otp />}/>
         <Route path='/dashboard' element={<Dashboard />}/>
         <Route path='/profile' element={<Profile />}/>
         <Route path='/clients' element={<Clients />}/>
-        <Route path='/reset-password' element={<ForgotPass />}/>
+        <Route path='/forgot-password' element={<ForgotPass />}/>
+        <Route path='/reset-otp' element={<ResetOtp />}/>
+        <Route path='/reset-password' element={<ResetPass />}/>
 
         <Route path='/loans' element={<Loan />}/>
         <Route path='/newapplication' element={<NewappTable />}/>

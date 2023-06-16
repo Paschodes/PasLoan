@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Header from '../Pages/Header';
 import SideNav from '../Pages/SideNav';
-import '../pages/Dashboard.css'
+import '../Pages/Dashboard.css'
 import './Loan.css'
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import LoanTable from './LoanTable';

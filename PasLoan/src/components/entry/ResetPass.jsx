@@ -134,7 +134,7 @@ const ResetPass = () => {
             
                         <p>Reset Successful</p>
             
-                        <Link to='/' >Log in</Link>
+                        <Link to='/login' >Log in</Link>
                     </div>
                 )}
             </form>

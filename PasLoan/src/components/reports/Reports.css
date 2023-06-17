@@ -1,0 +1,356 @@
+.report-container {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 4fr;
+    position: relative;
+    height: 620px;
+}
+
+.rep-navlink {
+    position: absolute;
+    width: 1078px;
+    height: 60px;
+    left: 260px;
+    top: 2px;
+    background: #F0F4FC;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.rep-navlink a {
+    width: 45px;
+    height: 15px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #010E2A;
+}
+
+.rep-navlink .rep-link {
+    width: 59px;
+}
+
+.rep-navlink .repnav-icon {
+    width: 11px;
+    height: 15px;
+    opacity: 0.7;
+    margin: 0 3px;
+}
+
+.report-cons {
+    display: flex;
+}
+
+.rep-con1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 518px;
+    height: 784px;
+    left: 248px;
+    top: 80px;
+    background: #F0F4FC;
+    border-radius: 8px;
+}
+
+.rep-activity {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+    height: 30px;
+}
+
+.rep-activity h1 {
+    width: 80px;
+    height: 24px;
+    font-family: 'Extatica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #433B3B;
+    margin-top: 10px;
+}
+
+.rep-year {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    width: 128px;
+    height: 40px;
+    /* gap: 24px;
+    position: absolute;
+    left: 614px;
+    top: 192px; */
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.rep-actitop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0px 15px;
+}
+
+.rep-total {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    gap: 25px;
+}
+
+.rep-total-p {
+    box-sizing: border-box;
+    display: flex;
+    padding: 8px 16px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.rep-total-num {
+    gap: 0px;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.rep-pchart {
+    width: 200px;
+    margin-left: 16rem;
+    position: relative;
+    top: -5rem;
+}
+
+.rep-pchart p {
+    position: absolute;
+    left: 5.5rem;
+    margin-top: -8rem;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    width: 80px;
+    font-weight: 500;
+    color: #999CA0;
+}
+
+.rep-pchart p span {
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+    color: #000000;
+}
+
+.rep-defaults {
+    position: absolute;
+    top: 405px;
+    padding: 0px 15px;
+    width: 517px;
+}
+
+.rep-default {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+.rep-default .repdef-dot {
+    width: 10px;
+    background-color: #D30744;
+    height: 10px;
+    border-radius: 50%;
+}
+.rep-default p {
+    width: 94px;
+    height: 24px;
+    font-family: 'Extatica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.rep-defdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.defdown-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 16px;
+}
+
+.defdown-num {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.defdown-text p {
+    box-sizing: border-box;
+    display: flex;
+    padding: 8px 16px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.defdown-num span {
+    gap: 0px;
+    padding: 9px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.defdown-text .defdown-p {
+    border: 0.5px solid #D30744;
+}
+.defdown-num .defdown-span {
+    color: #D30744;
+}
+
+
+
+
+.rep-con2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 517px;
+    height: 784px;
+    left: 821px;
+    top: 80px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+}
+
+.rep-payment {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    align-items: center;
+    height: 160px;
+    background: #F0F4FC;
+    border-radius: 8px;
+}
+.rep-payment h1 {
+    position: absolute;
+    width: 220.86px;
+    height: 24px;
+    top: 48px;
+    font-family: 'Extatica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #433B3B;
+}
+.rep-month {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    width: 128px;
+    height: 40px;
+    padding: 8px 16px;
+    position: absolute;
+    left: 365px;
+    top: 43px;
+}
+
+.rep-pay {
+    box-sizing: border-box;
+    width: 515.93px;
+    height: 143px;
+    background: #F0F4FC;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    padding: 20px;
+    color: #000000;
+    font-style: normal;
+    justify-content: space-between;
+}
+
+.rep-pay1, .rep-pay2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 0.5rem;
+}
+
+.rep-pay1 {
+    text-align: start;
+}
+.rep-pay2 {
+    text-align: end;
+}
+
+.rep-pay1 span, .rep-pay2 span {
+    font-family: 'Extatica';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.rep-pay1 p, .rep-pay2 p {
+    width: 168.42px;
+    height: 36px;
+    font-family: 'Helvetica';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.rep-appchart {
+    box-sizing: border-box;
+    width: 515.93px;
+    height: 482px;
+    background: #F0F4FC;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rep-appchart .rep-penapp {
+    background: #3969DC;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    width: 287px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rep-lgraph {
+    margin-top: 40px;
+    background-color: white;
+    width: 350px;
+}

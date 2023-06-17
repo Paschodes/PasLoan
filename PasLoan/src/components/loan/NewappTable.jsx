@@ -104,7 +104,16 @@ const NewappTable = () => {
                                     <span onClick={() => setIconDrop(true)}>
                                         <KeyboardArrowDownIcon className='downarrow-icon'/>
                                     </span>
-                                    {iconDrop && 
+                                    
+                                </td>
+                            </tr>
+                            )
+                        })}
+                    </tbody>
+            
+                </table>
+
+                {iconDrop && 
                                     <div className='icondrop'>
                                         <button className='imgdrop-close' onClick={() => setIconDrop(false)}><CloseIcon style={{width: '16px', height: '16px'}}/></button>
                                         <select className='icondrop-select' name="doc" id="doc">
@@ -118,13 +127,6 @@ const NewappTable = () => {
                                             <option value="close">Closed</option>
                                         </select>
                                     </div>}
-                                </td>
-                            </tr>
-                            )
-                        })}
-                    </tbody>
-            
-                </table>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import '../pages/Dashboard.css'
+import '../Pages/Dashboard.css'
 import './LoanTable.css'
 import Header from '../Pages/Header';
 import SideNav from '../Pages/SideNav';

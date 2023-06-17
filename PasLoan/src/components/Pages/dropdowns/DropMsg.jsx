@@ -41,7 +41,7 @@ const DropMsg = () => {
                 
 
                 <div className='dropmsg-btndiv'>
-                    <button>View all messages</button>
+                    <button><Link to='/messages' > View all messages</Link></button>
                 </div>
             </div>
         }

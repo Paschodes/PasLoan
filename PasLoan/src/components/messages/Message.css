@@ -1,0 +1,111 @@
+.messag-container {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 4fr;
+    position: relative;
+    height: 620px;
+}
+
+.messag-navlink {
+    position: absolute;
+    width: 1078px;
+    height: 60px;
+    left: 260px;
+    top: 2px;
+    background: #F0F4FC;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.messag-navlink a {
+    width: 45px;
+    height: 15px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #010E2A;
+}
+
+.messag-navlink .messagnav-icon {
+    width: 11px;
+    height: 15px;
+    opacity: 0.7;
+    margin: 0 3px;
+}
+
+.messag-navlink .messag-link {
+    width: 100px;
+}
+
+
+
+.messag-body {
+    width: 1078px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 260px;
+    top: 100px;
+}
+
+.messag-divs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 0.2px solid #D9D9D9;
+}
+
+.messag-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px;
+    gap: 40px;
+    /* width: 455.63px; */
+    height: 56px;
+}
+
+.messag-state {
+    display: flex;
+    flex-direction: column;
+    height: 45px;
+    align-items: flex-start;
+}
+
+.messag-state h5 {
+    height: 21px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #282828;
+}
+
+.messag-state p {
+    /* width: 792px; */
+    height: 16px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #717070;
+}
+
+.messag-min {
+    width: 170.39px;
+    height: 21px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #8D8787;
+    padding: 0 30px;
+}

@@ -10,7 +10,7 @@ const DropImg = () => {
   return (
     <div>
         <span onClick={() => setDropImg(true)}>
-        <Image borderRadius='full' boxSize='35px' margin='0' src='https://bit.ly/dan-abramov' alt='Dan Abramov'/>
+        <Image style={{cursor: 'pointer'}} borderRadius='full' boxSize='35px' margin='0' src='https://bit.ly/dan-abramov' alt='Dan Abramov'/>
         </span>
         {dropImg && 
             <div className='imgdrop'>
@@ -18,7 +18,7 @@ const DropImg = () => {
                 <a href="/" className='imgdrop-active'>Online</a>
                 <a href="/">On Break</a>
                 <a href="/">Offline</a>
-                <a href="/">View Profile</a>
+                <Link to='/profile'>View Profile</Link>
                 <a href="/">Profile Settings</a>
                 <Link to='/' className='imgdrop-out'>Log Out</Link>
             </div>

@@ -23,14 +23,20 @@ import Clients from './components/clients/Clients';
 import ResetPass from './components/entry/ResetPass';
 import ForgotPass from './components/entry/ForgotPass';
 import ResetOtp from './components/entry/ResetOtp';
+import Intro from './components/entry/Intro';
+import Reports from './components/reports/Reports';
+import Notify from './components/notify/Notify';
+import Message from './components/messages/Message';
 
 function App() {
 
   return (
+    
     <>
     <ChakraProvider>
       <Routes>
-        <Route path='/' element={<Login />} />
+        <Route path='/' element={<Intro />} />
+        <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />}/>
         <Route path='/confirm' element={<Confirm />}/>
         <Route path='/otp' element={<Otp />}/>
@@ -40,6 +46,9 @@ function App() {
         <Route path='/forgot-password' element={<ForgotPass />}/>
         <Route path='/reset-otp' element={<ResetOtp />}/>
         <Route path='/reset-password' element={<ResetPass />}/>
+        <Route path='/reports' element={<Reports />} />
+        <Route path='/notifications' element={<Notify />}/>
+        <Route path='/messages' element={<Message />}/>
 
         <Route path='/loans' element={<Loan />}/>
         <Route path='/newapplication' element={<NewappTable />}/>
@@ -50,8 +59,8 @@ function App() {
         <Route path='/default' element={<DefaultTable />}/>
         <Route path='/closed' element={<CloseTable />}/>
 
-        <Route path='/application' element={<Application />}/>
-        <Route path='/app-dashboard' element={<AppDashboard />} />
+        {/* <Route path='/application' element={<Application />}/>
+        <Route path='/app-dashboard' element={<AppDashboard />} /> */}
       </Routes>
       </ChakraProvider>
       

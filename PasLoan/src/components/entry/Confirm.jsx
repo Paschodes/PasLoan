@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import side from '../../assets/sideImg.png'
 import { Link } from 'react-router-dom'
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';

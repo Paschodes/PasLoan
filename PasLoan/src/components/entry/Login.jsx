@@ -27,7 +27,7 @@ const Login = () => {
     username: [
       {
         isValid: (value) => /^[a-zA-Z]+ [a-zA-Z]+$/.test(value),
-        message: 'Invalid username.',
+        message: 'Invalid username ',
     },
     ],
     password: [

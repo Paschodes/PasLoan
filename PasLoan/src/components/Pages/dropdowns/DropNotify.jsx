@@ -43,7 +43,7 @@ const DropNotify = () => {
                         </div>
                     </div>
                     <button className='dropnoti-footer2'>
-                        <p>View all Notifications</p>
+                        <Link className='dropnoti-footnoti' to='/notifications'>View all Notifications</Link>
                     </button>
             </div>
         </div>}

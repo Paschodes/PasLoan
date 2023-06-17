@@ -200,7 +200,7 @@ const SignUp = () => {
                     <button className='signup-btn'>Sign Up</button>
                 </form>
 
-                <p className='signup-p'>Already have an account? <span><Link to='/'>Log In</Link></span></p>
+                <p className='signup-p'>Already have an account? <span><Link to='/login'>Log In</Link></span></p>
             </div>
 
         </div>

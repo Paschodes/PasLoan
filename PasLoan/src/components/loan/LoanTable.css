@@ -72,6 +72,7 @@
     width: 168px;
     height: 24px;
     justify-content: space-between;
+    /* position: absolute; */
 }
 
 .tddown-arrow .downarrow-icon {
@@ -83,12 +84,11 @@
 
 
 .icondrop {
-    position: absolute;
+    position: relative;
     width: 182px;
     height: 87px;
     background: #F0F4FC;
     border-radius: 8px;
-    /* z-index: 999; */
 }
 
 .icondrop-select {

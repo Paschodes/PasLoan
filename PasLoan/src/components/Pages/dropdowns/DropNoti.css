@@ -67,17 +67,24 @@
     color: #000000;
 }
 
+.dropnoti-divs {
+    position: absolute;
+    left: 16px;
+    top: 108px;
+    display: flex;
+    flex-direction: column;
+    height: 336px;
+}
+
 .dropnoti-down {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
     padding: 0px;
     gap: 24px;
-    position: absolute;
     width: 377px;
     height: 48px;
-    left: 16px;
-    top: 108px;
+    margin-bottom: 15px;
 }
 
 .dropnoti-down img {

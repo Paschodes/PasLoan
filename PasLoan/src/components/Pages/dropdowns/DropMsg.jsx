@@ -22,21 +22,23 @@ const DropMsg = () => {
                 
                 <a href="/" className='dropmsg-newmsg'>New messages</a>
 
-                <div className='dropmsg-down'>
-                    <img src="https://bit.ly/dan-abramov" alt="profile-img" />
-                    <div className='dropmsg-div'>
-                        <h3>Jane Doe</h3>
-                        <p>Hello, please have you had a chan... <span>1hr</span></p>
+                <div className='dropmsg-divs'>
+                    <div className='dropmsg-down'>
+                        <img src="https://bit.ly/dan-abramov" alt="profile-img" />
+                        <div className='dropmsg-div'>
+                            <h3>Jane Doe</h3>
+                            <p>Hello, please have you had a chan... <span>1hr</span></p>
+                        </div>
+                        <FiberManualRecordIcon style={{width: '12px', height: '12px', color: '#0744D3'}} className='dropmsg-icon'/>
                     </div>
-                    <FiberManualRecordIcon style={{width: '12px', height: '12px', color: '#0744D3'}} className='dropmsg-icon'/>
-                </div>
-                <div className='dropmsg-down'>
-                    <img src="https://bit.ly/dan-abramov" alt="profile-img" />
-                    <div className='dropmsg-div'>
-                        <h3>Jane Doe</h3>
-                        <p>Hello, please have you had a chan... <span>1hr</span></p>
+                    <div className='dropmsg-down'>
+                        <img src="https://bit.ly/dan-abramov" alt="profile-img" />
+                        <div className='dropmsg-div'>
+                            <h3>Jane Doe</h3>
+                            <p>Hello, please have you had a chan... <span>1hr</span></p>
+                        </div>
+                        <FiberManualRecordIcon style={{width: '12px', height: '12px', color: '#0744D3'}} className='dropmsg-icon'/>
                     </div>
-                    <FiberManualRecordIcon style={{width: '12px', height: '12px', color: '#0744D3'}} className='dropmsg-icon'/>
                 </div>
                 
 

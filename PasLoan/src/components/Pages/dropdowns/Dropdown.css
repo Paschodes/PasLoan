@@ -51,30 +51,31 @@
     top: 64px;
 }
 
-.dropmsg-down {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
+.dropmsg-divs {
     position: absolute;
-    width: 442px;
-    height: 336px;
     left: 16px;
     top: 108px;
+    display: flex;
+    flex-direction: column;
+    height: 336px;
+}
+
+.dropmsg-down {
+    display: flex;
+    padding: 0px;
+    gap: 24px;
+    width: 442px;
+    margin-bottom: 15px;
+    align-items: center;
 }
 
 .dropmsg-down img {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 8px;
-    position: absolute;
     width: 48px;
     height: 48px;
-    left: 0px;
-    top: 0px;
     background: url(.jpg), #EBEBEB;
     border-radius: 100px;
 }
@@ -85,18 +86,15 @@
     align-items: flex-start;
     padding: 0px;
     width: 442px;
-    height: 336px;
-    margin-left: 70px;
 }
 
-.dropmsg-icon {
-    position: absolute;
+.dropmsg-down .dropmsg-icon {
     width: 12px;
     height: 12px;
-    left: 430px;
-    top: 18px;
-    background: #0744D3;
     border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .dropmsg-btndiv {

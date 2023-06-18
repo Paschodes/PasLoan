@@ -13,7 +13,7 @@ const Confirm = () => {
             <LoginLogo />
             <div className='confirm-info'>
               <h2>Confirmation email sent !</h2>
-              <p>Didn’t receive the email ? <br />
+              <p>Didn't receive the email ? <br />
                   Please check the email address you used to make sure it matches the address
                   on your account try looking in your spam folder, or request another email below.
               </p>

@@ -5,9 +5,7 @@ import '../Pages/Dashboard.css';
 import { Link } from 'react-router-dom';
 import clientData from './ClientData';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import './Client.css'
-// import LoanInput from '../loan/LoanInput';
-
+import './Client.css';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 import CloseIcon from '@mui/icons-material/Close';

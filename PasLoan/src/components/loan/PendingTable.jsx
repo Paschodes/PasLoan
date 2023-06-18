@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../Pages/Dashboard.css'
+import '../Pages/Dashboard.css';
 import Header from '../Pages/Header';
 import SideNav from '../Pages/SideNav';
 import LoanInput from './LoanInput';

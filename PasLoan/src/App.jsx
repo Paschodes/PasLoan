@@ -27,6 +27,8 @@ import Intro from './components/entry/Intro';
 import Reports from './components/reports/Reports';
 import Notify from './components/notify/Notify';
 import Message from './components/messages/Message';
+import Support from './components/support/Support';
+import Faq from './components/support/Faq';
 
 function App() {
 
@@ -49,6 +51,9 @@ function App() {
         <Route path='/reports' element={<Reports />} />
         <Route path='/notifications' element={<Notify />}/>
         <Route path='/messages' element={<Message />}/>
+        <Route path='/support' element={<Support />} />
+        <Route path='/support/faq' element={<Faq />} />
+        
 
         <Route path='/loans' element={<Loan />}/>
         <Route path='/newapplication' element={<NewappTable />}/>

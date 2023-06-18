@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './LoanTable.css'
+import './LoanTable.css';
 // import data from './LoanData';
 
 const LoanTable = ({data}) => {

@@ -28,10 +28,17 @@ const DropNotify = () => {
                 <a href="/" >New</a>
             </div>            
 
-            <div className='dropnoti-down'>
-                <img src="https://bit.ly/dan-abramov" alt="img" />
-                <p>Jane Doe applied for a loan extension</p>
-                <FiberManualRecordIcon style={{width: '12px', height: '12px', color: '#0744D3'}} className='dropmsg-icon'/>
+            <div className='dropnoti-divs'>
+                <div className='dropnoti-down'>
+                    <img src="https://bit.ly/dan-abramov" alt="img" />
+                    <p>Jane Doe applied for a loan extension</p>
+                    <FiberManualRecordIcon style={{width: '12px', height: '12px', color: '#0744D3'}} className='dropmsg-icon'/>
+                </div>
+                <div className='dropnoti-down'>
+                    <img src="https://bit.ly/dan-abramov" alt="img" />
+                    <p>Jane Doe applied for a loan extension</p>
+                    <FiberManualRecordIcon style={{width: '12px', height: '12px', color: '#0744D3'}} className='dropmsg-icon'/>
+                </div>
             </div>
 
             <div className='dropnoti-footer'>

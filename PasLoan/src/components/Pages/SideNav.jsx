@@ -56,7 +56,7 @@ const SideNav = () => {
 
         <div className='sidenav-links'>
           <ContactSupportOutlinedIcon className='acc-icon'/>
-          <a href="/" className='sidenav-links'>Support</a>
+          <Link to='/support' className='sidenav-links'>Support</Link>
         </div>
             
     </div>

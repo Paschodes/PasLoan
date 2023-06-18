@@ -29,7 +29,9 @@ const Intro = () => {
         </div>
 
         <div className='intro-text'>
-            <LoginLogo />
+            <div className='intro-logo'>
+                <LoginLogo />
+            </div>
             <h4>Your one stop virtual assistant for the Loan Organization System</h4>
         </div>
     </main>

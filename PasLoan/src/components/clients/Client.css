@@ -32,6 +32,10 @@
     border-radius: 3px;
 }
 
+.client-tbody {
+    margin-top: 50px;
+}
+
 .client-tdata {
     display: flex;
     flex-direction: row;

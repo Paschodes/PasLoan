@@ -100,7 +100,7 @@ const PendingTable = () => {
                                 <td>{data.LastName}</td>
                                 <td>{data.applicationDate}</td>
                                 <td>{data.update}</td>
-                                <td className='tddown-arrow'>                             
+                                <td className='tddown-arrow pen-table'>                             
                                     {data.pending}
                                     <span onClick={() => setIconDrop(true)}>
                                         <KeyboardArrowDownIcon className='downarrow-icon'/>

@@ -5,11 +5,11 @@
     padding: 8px 16px;
     gap: 16px;
     position: absolute;
-    width: 1078px;
+    width: 1062px;
     height: 40px;
     left: 260px;
     top: 215px;
-    border: 0.5px solid #000000;
+    border: 0.8px solid #0744D3;
 }
 
 .loantable-head th {
@@ -57,7 +57,7 @@
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 18px;
     display: flex;
     align-items: center;
@@ -72,7 +72,6 @@
     width: 168px;
     height: 24px;
     justify-content: space-between;
-    /* position: absolute; */
 }
 
 .tddown-arrow .downarrow-icon {
@@ -105,4 +104,31 @@
     top: calc(50% - 32px/2 + 0.5px);
     border: 1px solid #010E2A;
     border-radius: 16px;
+}
+
+
+
+
+
+.loantable-data .pen-table {
+    background: #F3B516;
+    border-radius: 24px;
+    width: 111.33px;
+    height: 40px;
+    color: #FFFFFE;
+}
+
+.loantable-data .active-table {
+    width: 111.33px;
+    height: 40px;
+    background: #04297F;
+    border-radius: 24px;
+    color: #FFFFFE;
+}
+
+.loantable-data .due-table {
+    height: 40px;
+    background: #F3B516;
+    border-radius: 24px;
+    color: #FFFFFE;
 }

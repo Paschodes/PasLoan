@@ -49,7 +49,7 @@ const SideNav = () => {
             
             <div className='sidenav-links'>
               <SettingsApplicationsOutlinedIcon className='acc-icon'/>
-              <a href="/" className='sidenav-links'>Settings</a>
+              <Link to='/settings' className='sidenav-links'>Settings</Link>
             </div>
       </div>
             

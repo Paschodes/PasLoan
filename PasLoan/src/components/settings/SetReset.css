@@ -1,0 +1,147 @@
+.setreset-container {
+    position: relative;
+    /* width: 1440px; */
+    height: 1024px;
+    background: #F0F4FC;
+}
+
+.setreset-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 524px;
+    position: absolute;
+    left: 430px;
+    top: 160px;
+}
+
+.setreset-h1 {
+    width: 313px;
+    height: 24px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.setreset-form {
+    margin-top: 40px;
+}
+
+.setreset-pass {
+    padding: 12px 16px;
+    width: 524px;
+    height: 72px;
+    background: #FFFFFE;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #717070;
+}
+
+.setreset-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    width: 524px;
+    height: 72px;
+    background: #010E2A;
+    border-radius: 8px;
+    
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFE;
+    margin-top: 30px;
+}
+
+.setreset-newOpeneye {
+    position: absolute;
+    left: 90.31%;
+    top: 41%;
+}
+
+.setreset-confirmCloseye{
+    position: absolute;
+    left: 90.31%;
+    top: 61.61%;
+}
+
+.setreset-olderr {
+    position: absolute;
+    top: 132px;
+    left: 2px; 
+}
+
+.setreset-newerr {
+    position: absolute;
+    top: 224px;
+    left: 2px;
+}
+
+.setreset-confirmerr {
+    position: absolute;
+    top: 315px;
+    left: 2px;
+}
+
+
+.setreset-pop {
+    box-sizing: border-box;
+    position: absolute;
+    width: 729px;
+    height: 473px;
+    left: 317px;
+    top: 130px;
+    background: #FFFFFF;
+    border: 1px solid #F0F4FC;
+    border-radius: 16px;
+}
+
+.setreset-pop .setreset-close {
+    position: absolute;
+    left: 673px;
+    top: 16px;
+    color: #D30744;;
+}
+
+.setreset-pop .setreset-icon {
+    position: absolute;
+    left: 39.09%;
+    right: 38.96%;
+    top: 21.99%;
+    bottom: 44.19%;
+    color: #297F04;
+    width: 160px;
+    height: 160px;
+}
+
+.setreset-pop p {
+    position: absolute;
+    width: 370px;
+    height: 28px;
+    left: 180px;
+    top: 268px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: flex-end;
+    color: #010E2A;
+}

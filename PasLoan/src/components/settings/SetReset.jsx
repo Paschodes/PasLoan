@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-import LoginLogo from '../../LoginLogo';
-import side from '../../assets/sideImg.png'
-import './ForgotPass.css'
-import './PopUp.css'
+import './SetReset.css';
 import { Link } from 'react-router-dom';
 import DoneIcon from '@mui/icons-material/Done';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
+import CloseIcon from '@mui/icons-material/Close';
 
 const INITINPUT = {newPassword: '', confirmPassword: ''};
 
-const ResetPass = () => {
+const SetReset = () => {
 
     const [resetInput, setResetInput] = useState(INITINPUT);
     const [isOpen, setIsOpen] = useState(false);
@@ -28,6 +26,16 @@ const ResetPass = () => {
     };
 
     const VALIDATION = {
+        oldPassword: [
+            {
+              isValid: (value) => !!value,
+              message: 'Is required.',
+            },
+            {
+                isValid: (value) => /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/.test(value),
+                message: 'must be greater than 6 & at least a numeric digit, an uppercase & a lowercase letter.',
+            },
+        ],
         newPassword: [
             {
               isValid: (value) => !!value,
@@ -94,20 +102,16 @@ const ResetPass = () => {
 
 
   return (
-    <div className='reset'>
-        <img src={side} alt="login-img" className='login-img'/>
+    <div className='setreset-container'>
 
-        <div className='reset-content'>
-            <LoginLogo />
+        <div className='setreset-content'>
 
-            <h1 className='reset-h1'>Forgot Password ?</h1>
-            <form onSubmit={handleSubmit} className='reset-form'>
+            <h1 className='setreset-h1'>Change Password</h1>
+            <form onSubmit={handleSubmit} className='setreset-form'>
 
-                <input type={newPassVisible ? 'text' : 'password'} id='newPassword' className='reset-new' onChange={handleChange} 
-                value={resetInput.newPassword} placeholder='New Password'/>
-                    {newPassVisible ? (<VisibilityOutlinedIcon className='newOpeneye' onClick={toggleNewPassVisibility}/>) 
-                    : (<VisibilityOffOutlinedIcon className='newOpeneye' onClick={toggleNewPassVisibility}/>)}
-                    <div className='reset-new-error'>
+                <input type='password' id='oldPassword' className='setreset-pass' onChange={handleChange}
+                value={resetInput.oldPassword} placeholder='Old Password'/>
+                    <div className='setreset-olderr'>
                         {errorUI?.newPassword?.length ? (
                             <span style={{ color: 'red' }}>
                             {errorUI.newPassword[0].message}
@@ -115,11 +119,23 @@ const ResetPass = () => {
                         ) : null}
                     </div>
 
-                <input type={confirmPassVisible ? 'text' : 'password'} id='confirmPassword' className='reset-confirm' onChange={handleChange} 
+                <input type={newPassVisible ? 'text' : 'password'} id='newPassword' className='setreset-pass' onChange={handleChange} 
+                value={resetInput.newPassword} placeholder='New Password'/>
+                    {newPassVisible ? (<VisibilityOutlinedIcon className='setreset-newOpeneye' onClick={toggleNewPassVisibility}/>) 
+                    : (<VisibilityOffOutlinedIcon className='setreset-newOpeneye' onClick={toggleNewPassVisibility}/>)}
+                    <div className='setreset-newerr'>
+                        {errorUI?.newPassword?.length ? (
+                            <span style={{ color: 'red' }}>
+                            {errorUI.newPassword[0].message}
+                            </span>
+                        ) : null}
+                    </div>
+
+                <input type={confirmPassVisible ? 'text' : 'password'} id='confirmPassword' className='setreset-pass' onChange={handleChange} 
                 value={resetInput.confirmPassword} placeholder='Confirm Password'/>
-                    {confirmPassVisible ? (<VisibilityOutlinedIcon className='confirmCloseye' onClick={toggleConfirmwPassVisibility}/>) 
-                    : (<VisibilityOffOutlinedIcon className='confirmCloseye' onClick={toggleConfirmwPassVisibility}/>)}
-                    <div className='reset-confirm-error'>
+                    {confirmPassVisible ? (<VisibilityOutlinedIcon className='setreset-confirmCloseye' onClick={toggleConfirmwPassVisibility}/>) 
+                    : (<VisibilityOffOutlinedIcon className='setreset-confirmCloseye' onClick={toggleConfirmwPassVisibility}/>)}
+                    <div className='setreset-confirmerr'>
                         {errorUI?.confirmPassword?.length ? (
                             <span style={{ color: 'red' }}>
                             {errorUI.confirmPassword[0].message}
@@ -127,20 +143,21 @@ const ResetPass = () => {
                         ) : null}
                     </div>
                 
-                <button type='submit' className='reset-btn for-reset'><span>Reset Password</span></button>
-                {isOpen && (
-                    <div className='pass-pop'>
-                        <DoneIcon className='passpop-icon'/>
-            
-                        <p>Reset Successful</p>
-            
-                        <Link to='/login' >Log in</Link>
-                    </div>
-                )}
+                <button type='submit' className='setreset-btn'>Reset Password</button>
+                
             </form>
         </div>
+        {isOpen && (
+                    <div className='setreset-pop'>
+                        
+                        <Link to='/settings/security' className='setreset-close'><CloseIcon style={{width: '40px', height: '40px'}}/></Link>
+                        <DoneIcon className='setreset-icon'/>
+            
+                        <p>Password changed successful</p>
+                    </div>
+                )}
     </div>
   )
 }
 
-export default ResetPass;
+export default SetReset;

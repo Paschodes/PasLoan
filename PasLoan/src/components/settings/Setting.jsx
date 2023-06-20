@@ -28,7 +28,7 @@ const Setting = () => {
                     <Link className='setgen-header'>Profile</Link>
                     <Link>User Permissions</Link>
                     <Link>Notifications</Link>
-                    <Link>Security</Link>
+                    <Link to="/settings/security">Security</Link>
                 </div>
 
                 <div className='setgen-divs'>

@@ -1,0 +1,141 @@
+.setsecu-container {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 4fr;
+    position: relative;
+    height: 620px;
+}
+
+.setsecu-navlink {
+    position: absolute;
+    width: 1078px;
+    height: 60px;
+    left: 260px;
+    top: 2px;
+    background: #F0F4FC;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.setsecu-navlink a {
+    width: 40px;
+    height: 15px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #010E2A; 
+}
+
+.setsecu-navlink .setsecu-icon {
+    width: 11px;
+    height: 15px;
+    opacity: 0.7;
+    margin: 0 3px;
+}
+
+.setsecu-navlink .setsecu-link {
+    width: 52px;
+}
+
+.setsecu-divs {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 1073.95px;
+    left: 260px;
+    top: 150px;
+}
+
+.setsecu-ediv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1078px;
+    height: 112px;
+    background: #F0F4FC;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.setsec-addiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+
+.setsec-addiv .addiv-add {
+    width: 120.46px;
+    height: 18px;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.setsec-addiv .addiv-para {
+    width: 351.57px;
+    height: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+    color: #433B3B;
+}
+
+.setsec-email {
+    width: 182.37px;
+    height: 18px;
+    line-height: 18px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    /* display: flex;
+    align-items: flex-end; */
+}
+
+.setsec-btn1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    width: 166.16px;
+    height: 48px;
+    background: #3969DC;
+    border-radius: 8px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.setsec-btn2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    width: 117.53px;
+    height: 48px;
+    background: #D30744;
+    border-radius: 8px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}

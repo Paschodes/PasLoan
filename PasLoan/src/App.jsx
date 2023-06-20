@@ -30,6 +30,8 @@ import Message from './components/messages/Message';
 import Support from './components/support/Support';
 import Faq from './components/support/Faq';
 import Setting from './components/settings/Setting';
+import SetSecure from './components/settings/SetSecure';
+import SetReset from './components/settings/SetReset';
 
 function App() {
 
@@ -55,6 +57,9 @@ function App() {
         <Route path='/support' element={<Support />} />
         <Route path='/support/faq' element={<Faq />} />
         <Route path='/settings' element={<Setting />} />
+        <Route path='/settings/security' element={<SetSecure />} />
+        <Route path='/settings/security/change-password' element={<SetReset />}/>
+        
         
 
         <Route path='/loans' element={<Loan />}/>

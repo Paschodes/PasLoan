@@ -1,0 +1,141 @@
+.setnot-contaier {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 4fr;
+    position: relative;
+    height: 620px;
+}
+
+.setnot-navlink {
+    position: absolute;
+    width: 1078px;
+    height: 60px;
+    left: 260px;
+    top: 2px;
+    background: #F0F4FC;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.setnot-content {
+    position: absolute;
+    width: 1078px;
+    left: 0px;
+    top: 63px;
+}
+
+.setnot-navlink a {
+    width: 40px;
+    height: 15px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #010E2A; 
+}
+
+.setnot-navlink .setnot-icon {
+    width: 11px;
+    height: 15px;
+    opacity: 0.7;
+    margin: 0 3px;
+}
+
+.setnot-navlink .setnot-link1 {
+    width: 52px;
+}
+
+.setnot-navlink .setnot-link2 {
+    width: 80px;
+}
+
+
+.setnot-body {
+    position: absolute;
+    width: 1078px;
+    left: 258px;
+    top: 225px;
+    color: #010E2A;
+}
+
+.setnot-divs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: start;
+    margin-bottom: 50px;
+}
+
+.setnot-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.setnot-left h1{
+    width: 196px;
+    height: 16px;
+    font-family: 'Extatica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.setnot-left p {
+    width: 412px;
+    height: 36px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+}
+
+.setnot-right {
+    width: 462px;
+    height: 326px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.setnot-right-div {
+    width: 462px;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.setnot-right-det h2 {
+    width: 177px;
+    height: 24px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.setnot-right-det p {
+    width: 362px;
+    height: 24px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center
+}

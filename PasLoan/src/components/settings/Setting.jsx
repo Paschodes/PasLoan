@@ -24,10 +24,10 @@ const Setting = () => {
                 </div>
 
                 <div className='setgen-headlink'>
-                    <Link className='setgen-header'>General</Link>
-                    <Link className='setgen-header'>Profile</Link>
-                    <Link>User Permissions</Link>
-                    <Link>Notifications</Link>
+                    <Link to='/settings' className='setgen-header'>General</Link>
+                    <Link to='/settings/profile' className='setgen-header'>Profile</Link>
+                    <Link to='/settings/user-permission'>User Permissions</Link>
+                    <Link to='settings/notification'>Notifications</Link>
                     <Link to="/settings/security">Security</Link>
                 </div>
 

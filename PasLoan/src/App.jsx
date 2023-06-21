@@ -32,6 +32,9 @@ import Faq from './components/support/Faq';
 import Setting from './components/settings/Setting';
 import SetSecure from './components/settings/SetSecure';
 import SetReset from './components/settings/SetReset';
+import SetProfile from './components/settings/SetProfile';
+import SetNotify from './components/settings/SetNotify';
+import SetPermit from './components/settings/SetPermit';
 
 function App() {
 
@@ -59,6 +62,9 @@ function App() {
         <Route path='/settings' element={<Setting />} />
         <Route path='/settings/security' element={<SetSecure />} />
         <Route path='/settings/security/change-password' element={<SetReset />}/>
+        <Route path='/settings/profile' element={<SetProfile />}/>
+        <Route path='/settings/notification' element={<SetNotify />}/>
+        <Route path='/settings/user-permission' element={<SetPermit />}/>
         
         
 

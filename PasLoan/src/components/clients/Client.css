@@ -47,6 +47,7 @@
     height: 48px;
     left: -18px;
     top: 208px;
+    cursor: pointer;
 }
 
 .client-tdata td {

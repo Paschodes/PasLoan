@@ -35,6 +35,8 @@ import SetReset from './components/settings/SetReset';
 import SetProfile from './components/settings/SetProfile';
 import SetNotify from './components/settings/SetNotify';
 import SetPermit from './components/settings/SetPermit';
+import Overview from './components/clients/overview/Overview';
+import LoanDetails from './components/clients/overview/LoanDetails';
 
 function App() {
 
@@ -65,6 +67,8 @@ function App() {
         <Route path='/settings/profile' element={<SetProfile />}/>
         <Route path='/settings/notification' element={<SetNotify />}/>
         <Route path='/settings/user-permission' element={<SetPermit />}/>
+        <Route path='/clients/overview/general' element={<Overview />} />
+        <Route path='/clients/overview/loan-details' element={<LoanDetails />} />
         
         
 

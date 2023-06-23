@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import './Client.css'
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import { useNavigate } from 'react-router-dom';
 // import clientData from './ClientData';
 
 const ClientTable = ({clientData}) => {
+    const navigate = useNavigate();
 
     const [selectAll, setSelectAll] = useState(false);
     const [checkdItems, setCkeckdItems] = useState({});
@@ -53,7 +55,7 @@ const ClientTable = ({clientData}) => {
                     <tbody className='client-tbody'>
                         {clientData?.map((data) => {
                             return (
-                            <tr key={data.id} style={{background: checkdItems[data.id] ? '#F0F4FC' : 'white'}} className='client-tdata'>
+                            <tr onClick={() => navigate('/clients/overview/general')} key={data.id} style={{background: checkdItems[data.id] ? '#F0F4FC' : 'white'}} className='client-tdata'>
                                 <td className='table-check'>
                                     <input type="checkbox" id='checkbox-data' name={data.id} checked={checkdItems[data.id] || false} onChange={handleCheckboxChange}/>
                                 </td>

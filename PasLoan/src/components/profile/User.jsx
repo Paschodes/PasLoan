@@ -2,6 +2,7 @@ import React from 'react'
 import './User.css'
 import { Image } from '@chakra-ui/react';
 import profile from '../../assets/profile.jpg'
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,7 +30,7 @@ export const User = () => {
                 </div>
             </div>    
         </div>
-        <button className='about-button'>Edit</button>
+        <Link to='/settings/profile' className='about-button'>Edit</Link>
     </div>
   )
 }

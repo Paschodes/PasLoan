@@ -30,7 +30,7 @@
 
 .sidenav-links:hover,
 .sidenav-links:active {
-    background-color: #FFFFFE;
+    background-color: #365499;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition: background-color 0.4s ease, color 0.3s ease, box-shadow 0.3s ease;
     border-radius: 5px;

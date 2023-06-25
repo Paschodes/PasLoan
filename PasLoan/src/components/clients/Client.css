@@ -44,10 +44,12 @@
     gap: 16px;
     position: relative;
     width: 1064px;
-    height: 48px;
+    height: 52px;
     left: -18px;
     top: 208px;
     cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .client-tdata td {

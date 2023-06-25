@@ -55,7 +55,7 @@ const ClientTable = ({clientData}) => {
                     <tbody className='client-tbody'>
                         {clientData?.map((data) => {
                             return (
-                            <tr onClick={() => navigate('/clients/overview/general')} key={data.id} style={{background: checkdItems[data.id] ? '#F0F4FC' : 'white'}} className='client-tdata'>
+                            <tr onClick={() => navigate('/clients/overview/general')} key={data.id} style={{background: checkdItems[data.id] ? '#F0F4FC' : '#F0F4FC'}} className='client-tdata'>
                                 <td className='table-check'>
                                     <input type="checkbox" id='checkbox-data' name={data.id} checked={checkdItems[data.id] || false} onChange={handleCheckboxChange}/>
                                 </td>

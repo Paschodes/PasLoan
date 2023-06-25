@@ -37,6 +37,9 @@ import SetNotify from './components/settings/SetNotify';
 import SetPermit from './components/settings/SetPermit';
 import Overview from './components/clients/overview/Overview';
 import LoanDetails from './components/clients/overview/LoanDetails';
+import RiskScore from './components/clients/overview/RiskScore';
+import Documents from './components/clients/overview/Documents';
+import Contract from './components/clients/overview/Contract';
 
 function App() {
 
@@ -69,6 +72,9 @@ function App() {
         <Route path='/settings/user-permission' element={<SetPermit />}/>
         <Route path='/clients/overview/general' element={<Overview />} />
         <Route path='/clients/overview/loan-details' element={<LoanDetails />} />
+        <Route path='/clients/overview/risk-score' element={<RiskScore />} />
+        <Route path='/clients/overview/documents' element={<Documents />} />
+        <Route path='/loans/loan-contract' element={<Contract />} />
         
         
 

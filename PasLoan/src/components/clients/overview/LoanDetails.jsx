@@ -8,7 +8,21 @@ import { Link } from 'react-router-dom';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
+ const LDINIT = {loanamt: '', purpose: '', repay: '', outstanding: '', institution: '', lender: '',
+    revenue: '', expenses: '', annualrev: '', monthprofit: '', average: '', npm: '', accname: '', accnumber: '', bankname: '',
+    colatype: '', colaname: '', modelno: '', purchase: '', marketvalue: '', modelcolor: ''}
 const LoanDetails = () => {
+
+    const [ldinput, setLdinput] = useState(LDINIT);
+
+    const handleChange = (e) => {
+        const {id, value} = e.target;
+        setLdinput((prevState) => ({
+            ...prevState,
+            [id]: value
+    }));
+    console.log({id, value});
+    }
 
     const [drop1, setDrop1] = useState(null);
     const [drop2, setDrop2] = useState(null);
@@ -46,8 +60,8 @@ const LoanDetails = () => {
                     <div className='over-headlinks'>
                         <Link to='/clients/overview/general' className='overhead-general'>General Information</Link>
                         <Link to='/clients/overview/loan-details'>Loan Details</Link>
-                        <Link>Risk Score</Link>
-                        <Link>Documents</Link>
+                        <Link to='/clients/overview/risk-score'>Risk Score</Link>
+                        <Link to='/clients/overview/documents'>Documents</Link>
                     </div>
                 </div>
             </div>
@@ -108,69 +122,69 @@ const LoanDetails = () => {
                 </span>
             </div>
             {drop2 && (
-                <div className='lddrop-div2'>
+                <form className='lddrop-div2'>
                     <div className='lddrop-div2top'>
                         <h1>Loan Information</h1>
-                        <form className='lddrop-loaninfo'>
+                        <div className='lddrop-loaninfo'>
                             <div className='lddrop-loandata'>
                                 <p className='lddrop-loan-p'>Loan Amount</p>
-                                <input type="text" placeholder='NGN550,000'/>
+                                <input type="text" id='loanamt' value={ldinput.loanamt} onChange={handleChange} placeholder='NGN550,000'/>
                             </div>
                             <div className='lddrop-loandata'>
                                 <p className='lddrop-loan-p'>Purpose of the Loan</p>
-                                <input type="text" placeholder='Business'/>
+                                <input type="text" id='purpose' value={ldinput.purpose} onChange={handleChange} placeholder='Business'/>
                             </div>
                             <div className='lddrop-loandata'>
                                 <p className='lddrop-loan-p'>Repayment Method</p>
-                                <input type="text" placeholder='Monthly'/>
+                                <input type="text" id='repay' value={ldinput.repay} onChange={handleChange} placeholder='Monthly'/>
                             </div>
                             <div className='lddrop-loandata'>
                                 <p className='lddrop-loan-pl'>Do you have any outstanding loan to be repaid?</p>
-                                <input type="text" placeholder='Yes'/>
+                                <input type="text" id='outstanding' value={ldinput.outstanding} onChange={handleChange} placeholder='Yes'/>
                             </div>
                             <div className='lddrop-loandata'>
                                 <p className='lddrop-loan-pl'>Is the loan with our institution?</p>
-                                <input type="text" placeholder='No'/>
+                                <input type="text" id='institution' value={ldinput.institution} onChange={handleChange} placeholder='No'/>
                             </div>
                             <div className='lddrop-loandata'>
                                 <p className='lddrop-loan-pl'>If No, please state the name of the lender</p>
-                                <input type="text" placeholder='paga'/>
+                                <input type="text" id='lender' value={ldinput.lender} onChange={handleChange} placeholder='paga'/>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
                     <div className='lddrop-div2down'>
                         <h1>Current Financial Information</h1>
-                        <form className='lddrop-fininfo-form'>
+                        <div className='lddrop-fininfo-form'>
                             <div className='lddrop-findiv'>
                                 <div className='lddrop-gross'>
                                     <label htmlFor="revenue">Gross Monthly Revenue</label>
-                                    <input type="text" placeholder='NGN450,000'/>
+                                    <input type="text" id='revenue' value={ldinput.revenue} onChange={handleChange} placeholder='NGN450,000'/>
                                 </div>
                                 <div className='lddrop-gross'>
                                     <label htmlFor="expenses">Gross Monthly Expenses</label>
-                                    <input type="text" placeholder='NGN300,000'/>
+                                    <input type="text" id='expenses' value={ldinput.expenses} onChange={handleChange} placeholder='NGN300,000'/>
                                 </div>
                                 <div className='lddrop-gross'>
                                     <label htmlFor="annual">Gross Annual Revenue</label>
-                                    <input type="text" placeholder='NGN5,400,000'/>
+                                    <input type="text" id='annualrev' value={ldinput.annualrev} onChange={handleChange} placeholder='NGN5,400,000'/>
                                 </div>
                             </div>
                             <div className='lddrop-findiv'>
                                 <div className='lddrop-gross'>
                                     <label htmlFor="month">Average Monthly Profit</label>
-                                    <input type="text" placeholder='NGN450,000'/>
+                                    <input type="text" id='monthprofit' value={ldinput.monthprofit} onChange={handleChange} placeholder='NGN450,000'/>
                                 </div>
                                 <div className='lddrop-gross'>
-                                    <label htmlFor="profit">Average Monthly Profit</label>
-                                    <input type="text" placeholder='NGN320,000'/>
+                                    <label htmlFor="profit">Average Monthly Revenue</label>
+                                    <input type="text" id='average' value={ldinput.average} onChange={handleChange} placeholder='NGN320,000'/>
                                 </div>
                                 <div className='lddrop-gross'>
                                     <label htmlFor="net">Net Monthly Profit</label>
-                                    <input type="text" placeholder='NGN420,000'/>
+                                    <input type="text" id='nmp' value={ldinput.npm} onChange={handleChange} placeholder='NGN420,000'/>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
                     <div className='lddrop-div2down'>
@@ -178,19 +192,19 @@ const LoanDetails = () => {
                             <div className='lddrop-findiv'>
                                 <div className='lddrop-gross'>
                                     <label htmlFor="aname">Account Name</label>
-                                    <input type="text" placeholder='Chioma Kahlay'/>
+                                    <input type="text" id='accname' value={ldinput.accname} onChange={handleChange} placeholder='Chioma Kahlay'/>
                                 </div>
                                 <div className='lddrop-gross'>
-                                    <label htmlFor="aprofit">Account Number</label>
-                                    <input type="number" placeholder='0011993459'/>
+                                    <label htmlFor="anumber">Account Number</label>
+                                    <input type="number" id='accnumber' value={ldinput.accnumber} onChange={handleChange} placeholder='0011993459'/>
                                 </div>
                                 <div className='lddrop-gross'>
                                     <label htmlFor="bankname">Bank Name</label>
-                                    <input type="text" placeholder='Fidelity Bank'/>
+                                    <input type="text" id='bankname' value={ldinput.bankname} onChange={handleChange} placeholder='Fidelity Bank'/>
                                 </div>
                             </div>
                     </div>
-                </div>
+                </form>
             )}
             <div div className='ld-divs'>
                 <p className='ld-headers header3'>Collateral Information</p>
@@ -203,31 +217,31 @@ const LoanDetails = () => {
                     <div className='lddrop-fininfo-form'>
                         <div className='lddrop-findiv'>
                             <div className='lddrop-gross'>
-                                <label htmlFor="month">Average Monthly Profit</label>
-                                <input type="text" placeholder='NGN450,000'/>
+                                <label htmlFor="cola-type">Collateral Type</label>
+                                <input type="text" id='colatype' value={ldinput.colatype} onChange={handleChange} placeholder='Vehicle'/>
                             </div>
                             <div className='lddrop-gross'>
-                                <label htmlFor="profit">Average Monthly Profit</label>
-                                <input type="text" placeholder='NGN320,000'/>
+                                <label htmlFor="cola-name">Collateral Name</label>
+                                <input type="text" id='colaname' value={ldinput.colaname} onChange={handleChange} placeholder='Toyota Corolla'/>
                             </div>
                             <div className='lddrop-gross'>
-                                <label htmlFor="net">Net Monthly Profit</label>
-                                <input type="text" placeholder='NGN420,000'/>
+                                <label htmlFor="model-no">Model No.</label>
+                                <input type="text" id='modelno' value={ldinput.modelno} onChange={handleChange} placeholder='E210'/>
                             </div>
                         </div>
 
                         <div className='lddrop-findiv'>
                             <div className='lddrop-gross'>
-                                <label htmlFor="month">Average Monthly Profit</label>
-                                <input type="text" placeholder='NGN450,000'/>
+                                <label htmlFor="purchase">Year of Purchase</label>
+                                <input type="date" id='purchase' value={ldinput.purchase} onChange={handleChange} placeholder='2019'/>
                             </div>
                             <div className='lddrop-gross'>
-                                <label htmlFor="profit">Average Monthly Profit</label>
-                                <input type="text" placeholder='NGN320,000'/>
+                                <label htmlFor="market">Current Market Value</label>
+                                <input type="text" id='marketvalue' value={ldinput.marketvalue} onChange={handleChange} placeholder='NGN3.5M'/>
                             </div>
                             <div className='lddrop-gross'>
-                                <label htmlFor="net">Net Monthly Profit</label>
-                                <input type="text" placeholder='NGN420,000'/>
+                                <label htmlFor="modelcolor">Model Color</label>
+                                <input type="text" id='modelcolor' value={ldinput.modelcolor} onChange={handleChange} placeholder='Silver'/>
                             </div>
                         </div>
                     </div>

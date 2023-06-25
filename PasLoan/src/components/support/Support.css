@@ -200,3 +200,44 @@
     line-height: 24px;
     color: #FFFFFE;
 }
+
+.support-drop textarea {
+    width: 1070px;
+    outline: none;
+}
+
+
+.support-okdrop {
+    width: 729px;
+    height: 473px;
+    border-radius: 16px;
+    border: 2px solid var(--scroll-bar, #04297F);
+    background: var(--arrows-and-texts, #FFFFFE);
+    position: absolute;
+    top: 246px;
+    left: 426px;
+    
+}
+
+.okdrop-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 69px;
+}
+
+.okdrop-down p {
+    color: var(--strokes-and-text, #010E2A);
+    font-size: 24px;
+    font-family: Helvetica;
+    font-weight: 700;
+}
+
+.support-okdrop .support-close {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    cursor: pointer;
+}

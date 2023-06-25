@@ -1,0 +1,110 @@
+.riskscore {
+    position: absolute;
+    top: 460px;
+    left: 259px;
+    width: 1080px;
+    height: 473px;
+}
+
+.riskscore-top {
+    width: 823px;
+    height: 259px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.riskscore-det {
+    width: 347px;
+    height: 256px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    font-family: Helvetica;
+    line-height: 32px;
+}
+
+.riskscore-det-left {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.riskscore-det-left p{
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.riskscore-det-right {
+    width: 61px;
+    height: 250px;
+    display: inline-flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.riskscore-detgreen {
+    color: #00D43D;
+}
+
+.riskchart-grade {
+    width: 107px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    position: absolute;
+    top: 103px;
+    left: 646px;
+}
+
+.riskchart-grade span {
+    color: #8D8787;
+    font-size: 64px;
+    font-family: Helvetica;
+    line-height: 32px;
+}
+
+.riskchart-grade p {
+    color: #000;
+    font-size: 24px;
+    font-family: Helvetica;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.riskscore-line {
+    width: 1080px;
+    height: 0.5px; 
+    background: #0744D3; 
+    margin: 20px 0px;
+}
+
+.riskscore-down {
+    width: 826px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    
+    color: #000;
+    font-size: 18px;
+    font-family: Helvetica;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.riskscore-deci {
+    width: 536px;
+    height: 144px;
+    border-radius: 16px;
+    background: var(--background-color-for-selection-and-breadcrumb, #F0F4FC);
+
+    font-size: 16px;
+    text-align: start;
+    padding-left: 16px;
+}

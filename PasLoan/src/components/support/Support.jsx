@@ -1,17 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Support.css'
 import { Link } from 'react-router-dom'
 import Header from '../Pages/Header';
 import SideNav from '../Pages/SideNav';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import DoneIcon from '@mui/icons-material/Done';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Support = () => {
     const [repDrop, setRepDrop] = useState (false);
+    const [okdrop, setOkDrop] = useState (false)
 
     const handleClick = () => {
         setRepDrop((prevDrop) => !prevDrop)
     }
+
+
   return (
     <div>
         <Header />
@@ -48,11 +53,24 @@ const Support = () => {
                     </div>
                     {repDrop && (
                         <div className='support-drop'>
-                            <input type="text" id="report"/>
-                            <button className='support-drop-btn'>Send</button>
+                            <textarea typeof='text' id="report" cols="30" rows="10"></textarea>
+                            <button onClick={() => setOkDrop(true)} className='support-drop-btn'>Send</button>
                         </div>
                     )}
                 </div>
+
+                {okdrop && (
+                    <div className='support-okdrop'>
+                        <span onClick={() => setOkDrop(false)} className='support-close'>
+                            <CloseIcon style={{width: '22.5px', height: '22.5px', color: '#D30744'}}/>
+                        </span>
+                        <div className='okdrop-down'>
+                            <DoneIcon style={{width: '160px', height: '160px', color: '#297F04'}}/>
+                            <p>Issue Sent</p>
+                        </div>
+                        
+                    </div>
+                )}
             </div>
         </div>
     </div>

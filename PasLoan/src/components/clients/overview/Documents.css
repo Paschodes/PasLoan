@@ -1,0 +1,44 @@
+.documen-body {
+    width: 980.737px;
+    height: 440px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 460px;
+    left: 285px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.documen-divs {
+    width: 977.696px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.documen-divs p {
+    color: #000;
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+.documen-divs a {
+    display: inline-flex;
+    height: 48px;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #0744D3;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-family: Helvetica;
+    font-weight: 700;
+    line-height: 24px;
+}

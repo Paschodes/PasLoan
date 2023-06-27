@@ -40,6 +40,7 @@ import LoanDetails from './components/clients/overview/LoanDetails';
 import RiskScore from './components/clients/overview/RiskScore';
 import Documents from './components/clients/overview/Documents';
 import Contract from './components/clients/overview/Contract';
+import Chat from './components/messages/Chat';
 
 function App() {
 
@@ -62,6 +63,7 @@ function App() {
         <Route path='/reports' element={<Reports />} />
         <Route path='/notifications' element={<Notify />}/>
         <Route path='/messages' element={<Message />}/>
+        <Route path='/messages/chat' element={<Chat />}/>
         <Route path='/support' element={<Support />} />
         <Route path='/support/faq' element={<Faq />} />
         <Route path='/settings' element={<Setting />} />

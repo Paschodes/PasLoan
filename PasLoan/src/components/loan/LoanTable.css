@@ -42,11 +42,11 @@
     gap: 16px;
     position: relative;
     width: 1064px;
-    height: 40px;
+    height: 52px;
     left: -17px;
     top: 265px;
-    /* background: #F0F4FC; */
-    margin-top: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
 
@@ -74,44 +74,15 @@
     justify-content: space-between;
 }
 
-.tddown-arrow .downarrow-icon {
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-}
-
-
-
-.icondrop {
-    position: relative;
-    width: 182px;
-    height: 87px;
-    background: #F0F4FC;
-    border-radius: 8px;
-}
-
-.icondrop-select {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 4px 8px;
-    gap: 10px;
-    position: absolute;
-    width: 153px;
-    height: 32px;
-    left: calc(50% - 153px/2);
-    top: calc(50% - 32px/2 + 0.5px);
-    border: 1px solid #010E2A;
-    border-radius: 16px;
-}
-
 
 
 
 
 .loantable-data .pen-table {
+    display: flex;
+    justify-content: center;
     background: #F3B516;
+    border: 1px solid #F3B516;
     border-radius: 24px;
     width: 111.33px;
     height: 40px;
@@ -119,16 +90,134 @@
 }
 
 .loantable-data .active-table {
+    display: flex;
+    justify-content: center;
     width: 111.33px;
     height: 40px;
+    border: 1px solid #04297F;
     background: #04297F;
     border-radius: 24px;
     color: #FFFFFE;
 }
 
 .loantable-data .due-table {
+    display: flex;
+    justify-content: center;
     height: 40px;
+    border: 1px solid #F3B516;
     background: #F3B516;
     border-radius: 24px;
     color: #FFFFFE;
 }
+
+.loantable-data .extend-tab {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    border: 1px solid #00D43D;
+    background: #33DD64;
+    border-radius: 24px;
+    color: #FFFFFE;
+}
+
+.loantable-data .default-tab {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    border: 1px solid #D30744;
+    background: #DC3969;
+    border-radius: 24px;
+    color: #FFFFFE;
+}
+
+.loantable-data .close-tab {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    border: 1px solid #6A8FE5;
+    background: #88A5EA;
+    border-radius: 24px;
+    color: #FFFFFE;
+}
+
+
+
+.loantab-body .loangreen {
+    color: #FFFFFE;
+    width: 152px;
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: 1px solid #00D43D;
+    background: #33DD64;
+}
+
+.loantab-body .loanyellow {
+    color: #FFFFFE;
+    width: 152px;
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: 1px solid #F3B516;
+    background: #F5C445;
+}
+
+.loantab-body .loanred {
+    color: #FFFFFE;
+    width: 152px;
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: 1px solid #D30744;
+    background: #DC3969;
+}
+
+.loantab-body .loanlight {
+    color: #FFFFFE;
+    width: 152px;
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: 1px solid #6A8FE5;
+    background: #88A5EA;
+}
+
+
+
+.loantable-data .newapp-tab {    
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    border-radius: 24px;
+    color: #FFFFFE;
+}
+
+.appdata-body .datablack {
+    width: 152px;
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: 1px solid #010E2A;
+    background: #343E55;
+}
+
+.appdata-body .datagreen {
+    width: 152px;
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: 1px solid #00D43D;
+    background: #33DD64;
+}
+
+.appdata-body .datared {
+    width: 152px;
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: 1px solid #D30744;
+    background: #DC3969;
+}
+
+.appdata-body .datawhite {
+    width: 152px;
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: 1px solid #FFFFFE;
+    background: #FFFFFE;
+    color: #010E2A;
+}
+

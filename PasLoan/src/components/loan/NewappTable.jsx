@@ -7,11 +7,24 @@ import SideNav from '../Pages/SideNav';
 import LoanInput from './LoanInput';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import data from './LoanData';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import CloseIcon from '@mui/icons-material/Close';
 
 const NewappTable = () => {
-    const [iconDrop, setIconDrop] = useState(false);
+
+    const appTarget = (appStatus) => {
+        switch (appStatus) {
+            case 'Docs. Reviewed':
+                return 'datablack';
+            case 'Approved':
+                return 'datagreen';
+            case 'Declined':
+                return 'datared';
+            case 'Incomplete Docs.':
+                return 'datawhite';
+            default:
+                return '#F0F4FC';
+        }
+    }
+
 
     const [selectAll, setSelectAll] = useState(false);
     const [checkdItems, setCkeckdItems] = useState({});
@@ -87,10 +100,10 @@ const NewappTable = () => {
                             <th>Application Status</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className='appdata-body'>
                         {data.map((data) => {
                             return (
-                            <tr key={data.id} style={{background: checkdItems[data.id] ? '#F0F4FC' : 'white'}} className='loantable-data'>
+                            <tr key={data.id} style={{background: checkdItems[data.id] ? '#F0F4FC' : '#F0F4FC'}} className='loantable-data'>
                                 <td className='table-check'>
                                     <input type="checkbox" name={data.id} checked={checkdItems[data.id] || false} onChange={handleCheckboxChange}/>
                                 </td>
@@ -99,11 +112,10 @@ const NewappTable = () => {
                                 <td>{data.LastName}</td>
                                 <td>{data.applicationDate}</td>
                                 <td>{data.update}</td>
-                                <td className='tddown-arrow'>                             
-                                    {data.appStatus}
-                                    <span onClick={() => setIconDrop(true)}>
-                                        <KeyboardArrowDownIcon className='downarrow-icon'/>
-                                    </span>
+                                <td className='tddown-arrow newapp-tab'>   
+                                    <span className={appTarget(data.appStatus)}>
+                                        {data.appStatus}
+                                    </span>                          
                                     
                                 </td>
                             </tr>
@@ -112,21 +124,6 @@ const NewappTable = () => {
                     </tbody>
             
                 </table>
-
-                {iconDrop && 
-                                    <div className='icondrop'>
-                                        <button className='imgdrop-close' onClick={() => setIconDrop(false)}><CloseIcon style={{width: '16px', height: '16px'}}/></button>
-                                        <select className='icondrop-select' name="doc" id="doc">
-                                            <option value="" disabled selected hidden>Select Format</option>
-                                            <option value="application">New Application</option>
-                                            <option value="pending">Pending</option>
-                                            <option value="active">Active</option>
-                                            <option value="due">Due for Payment</option>
-                                            <option value="extend">Extended</option>
-                                            <option value="default">Defaulted</option>
-                                            <option value="close">Closed</option>
-                                        </select>
-                                    </div>}
             </div>
         </div>
     </div>

@@ -5,6 +5,22 @@ import { useNavigate } from 'react-router-dom';
 // import clientData from './ClientData';
 
 const ClientTable = ({clientData}) => {
+
+    const targetTd = (loanStatus) => {
+        switch (loanStatus) {
+            case 'Active':
+                return 'bluecell';
+            case 'Due':
+                return 'yellowcell';
+            case 'Defaulted':
+                return 'redcell';
+            case 'Closed':
+                return 'lightcell'
+            default: 
+            return '#F0F4FC'
+        }
+    }
+
     const navigate = useNavigate();
 
     const [selectAll, setSelectAll] = useState(false);
@@ -61,10 +77,7 @@ const ClientTable = ({clientData}) => {
                                 </td>
                                 <td>{data.appNumber}</td>
                                 <td>{data.fullName}</td>
-                                <td className='status-dot'>
-                                    <FiberManualRecordIcon className='dot'/>
-                                    {data.loanStatus}
-                                </td>
+                                <td className='targettd'><span className={targetTd(data.loanStatus)}>{data.loanStatus}</span></td>
                                 <td>{data.date}</td>
                             </tr>
                             )

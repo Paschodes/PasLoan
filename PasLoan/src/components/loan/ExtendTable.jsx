@@ -11,8 +11,6 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import CloseIcon from '@mui/icons-material/Close';
 
 const ExtendTable = () => {
-    const [iconDrop, setIconDrop] = useState(false);
-
     const [selectAll, setSelectAll] = useState(false);
     const [checkdItems, setCkeckdItems] = useState({});
 
@@ -92,7 +90,7 @@ const ExtendTable = () => {
                     <tbody>
                         {data.map((data) => {
                             return (
-                            <tr key={data.id} style={{background: checkdItems[data.id] ? '#F0F4FC' : 'white'}} className='loantable-data'>
+                            <tr key={data.id} style={{background: checkdItems[data.id] ? '#F0F4FC' : '#F0F4FC'}} className='loantable-data'>
                                 <td className='table-check'>
                                     <input type="checkbox" name={data.id} checked={checkdItems[data.id] || false} onChange={handleCheckboxChange}/>
                                 </td>
@@ -101,25 +99,8 @@ const ExtendTable = () => {
                                 <td>{data.LastName}</td>
                                 <td>{data.applicationDate}</td>
                                 <td>{data.update}</td>
-                                <td className='tddown-arrow'>                             
-                                    {data.extend}
-                                    <span onClick={() => setIconDrop(true)}>
-                                        <KeyboardArrowDownIcon className='downarrow-icon'/>
-                                    </span>
-                                    {iconDrop && 
-                                        <div className='icondrop'>
-                                            <button className='imgdrop-close' onClick={() => setIconDrop(false)}><CloseIcon style={{width: '16px', height: '16px'}}/></button>
-                                            <select className='icondrop-select' name="doc" id="doc">
-                                                <option value="" disabled selected hidden>Select Format</option>
-                                                <option value="application">New Application</option>
-                                                <option value="pending">Pending</option>
-                                                <option value="active">Active</option>
-                                                <option value="due">Due for Payment</option>
-                                                <option value="extend">Extended</option>
-                                                <option value="default">Defaulted</option>
-                                                <option value="close">Closed</option>
-                                            </select>
-                                    </div>}                                         
+                                <td className='tddown-arrow extend-tab'>                             
+                                    {data.extend}                                       
                                 </td>
                             </tr>
                             )

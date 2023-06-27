@@ -1,0 +1,88 @@
+.chat-htime {
+    width: 1009px;
+    height: 23px;
+    position: absolute;
+    top: 77px;
+    left: 261px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+
+.chat-htime .chat-line {
+    width: 456.001px;
+    height: 0.5px;
+    background: #D5EEFF;
+    display: flex;
+    align-items: center;
+}
+
+.chat-body {
+    width: 1064px;
+    height: 929px;
+    position: absolute;
+    top: 188px;
+    left: 261px;
+}
+
+.chat-rec {
+    width: 540px;
+    height: 161px;
+    display: flex;
+    gap: 24px;
+}
+
+.chat-img {
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+}
+
+.chatrec-divs {
+    width: 468px;
+    height: 161px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chatrec-div {
+    width: 217px;
+    height: 65px;
+    border-radius: 8px;
+    background: #F0F4FC;
+    padding: 3px 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.chatrec-spans1 {
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    font-family: Helvetica;
+    color: #1E1E1E;
+}
+
+.chatrec-name {
+    color: #000;   
+    font-weight: 700;
+}
+
+.chatrec-para {
+    color: #282828;
+    font-size: 14px;
+    font-family: Helvetica;
+}
+
+.chatrec-div1 {
+    width: 576px;
+    height: 80px;
+    text-align: start;
+}

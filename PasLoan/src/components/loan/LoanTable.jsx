@@ -4,6 +4,23 @@ import './LoanTable.css';
 
 const LoanTable = ({data}) => {
 
+    const loanTarget = (status) => {
+        switch (status) {
+            case 'Approved':
+                return 'loangreen';
+            case 'Pending':
+                return 'loanyellow';
+            case 'Due':
+                return 'loanyellow';
+            case 'Declined':
+                return 'loanred';
+            case 'Closed':
+                return 'loanlight';
+            default:
+                return '#F0F4FC';
+        }
+    }
+
     const [selectAll, setSelectAll] = useState(false);
     const [checkdItems, setCkeckdItems] = useState({});
 
@@ -51,7 +68,7 @@ const LoanTable = ({data}) => {
                     <th>Loan Status</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody className='loantab-body'>
                 {data?.map((data) => {
                     return (
                     <tr key={data.id} style={{background: checkdItems[data.id] ? '#F0F4FC' : '#F0F4FC'}} className='loantable-data'>
@@ -63,7 +80,9 @@ const LoanTable = ({data}) => {
                         <td>{data.LastName}</td>
                         <td>{data.applicationDate}</td>
                         <td>{data.update}</td>
-                        <td>{data.status}</td>
+                        <td>
+                            <span className={loanTarget(data.status)}>{data.status}</span>
+                        </td>
                     </tr>
                     )
                 })}

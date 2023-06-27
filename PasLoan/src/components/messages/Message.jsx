@@ -24,7 +24,7 @@ const Message = () => {
 
                 <div className='messag-body'>
                     {MsgData.map((msg) => (
-                        <Link to='/messages' key={msg.id} className='messag-divs'>
+                        <Link to='/messages/chat' key={msg.id} className='messag-divs'>
                             <div className='messag-info'>
                                 <Image borderRadius='full' boxSize='35px' margin='0' src='https://bit.ly/dan-abramov' alt='Dan Abramov'/>
                                 <div className='messag-state'>

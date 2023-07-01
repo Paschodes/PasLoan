@@ -53,7 +53,7 @@
     border: 0.5px solid #0744D3;
 }
 
-.setgen-headlink a {
+.setgen-headlink .setgen-hlinks {
     width: 146.91px;
     height: 24px;
     font-family: 'Extatica';
@@ -62,6 +62,22 @@
     font-size: 20px;
     line-height: 24px;
     color: #010E2A;
+}
+
+.setgen-headlink .setgen-hlinks.active {
+    border-right: 1px solid #6A8FE5;
+    border-radius: 5px;
+    border-top: 1px solid #6A8FE5;
+    border-left: 1px solid #6A8FE5;
+    margin-top: 1rem;
+    padding: 10px 23px 10px 23px;
+    border-bottom: 8px solid white;
+    color: #010E2A;
+    background-color: white;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .setgen-headlink .setgen-header {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Setting.css'
 import Header from '../Pages/Header';
 import SideNav from '../Pages/SideNav';
@@ -7,6 +7,12 @@ import { Link } from 'react-router-dom';
 
 
 const Setting = () => {
+    const [activeTab, setActiveTab] = useState('General')
+
+    const handleTabClick = (tab) => {
+        setActiveTab(tab)
+    }
+
   return (
     <div>
         <Header />
@@ -24,7 +30,11 @@ const Setting = () => {
                 </div>
 
                 <div className='setgen-headlink'>
-                    <Link to='/settings' className='setgen-header'>General</Link>
+                    <div className={`'setgen-hlinks' ${activeTab === 'General' ? 'active' : ''}`} 
+                        onClick={() => handleTabClick("Profile")}>
+                        <Link to='/settings' className='setgen-header'>General</Link>
+                    </div>
+                    
                     <Link to='/settings/profile' className='setgen-header'>Profile</Link>
                     <Link to='/settings/user-permission'>User Permissions</Link>
                     <Link to='settings/notification'>Notifications</Link>

@@ -90,7 +90,7 @@ const ActiveTable = () => {
                     <tbody>
                         {data.map((data) => {
                             return (
-                            <tr key={data.id} style={{background: checkdItems[data.id] ? '#F0F4FC' : '#F0F4FC'}} className='loantable-data'>
+                            <tr key={data.id} style={{background: checkdItems[data.id] ? '#9CB4ED' : '#F0F4FC'}} className='loantable-data'>
                                 <td className='table-check'>
                                     <input type="checkbox" name={data.id} checked={checkdItems[data.id] || false} onChange={handleCheckboxChange}/>
                                 </td>

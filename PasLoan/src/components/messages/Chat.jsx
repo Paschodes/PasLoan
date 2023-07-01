@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../Pages/Header';
 import SideNav from '../Pages/SideNav';
 import './Message.css'
@@ -8,8 +8,36 @@ import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutl
 // import avatar from '../../../assets/Avatar.png'
 import chatpic from '../../assets/chatpic.png'
 import dot from '../../assets/Other.svg'
+import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
+import NoteAddOutlinedIcon from '@mui/icons-material/NoteAddOutlined';
+import EmojiPicker from 'emoji-picker-react';
+import EmojiEmotionsOutlinedIcon from '@mui/icons-material/EmojiEmotionsOutlined';
 
 const Chat = () => {
+
+  const [message, setMessage] = useState('');
+  const [inbox, setInbox] = useState([]);
+  const [showEmojiPicker, setShowEmojiPicker] = useState(false);
+  
+  const handleInputChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleClick = () => {
+    
+      setInbox([...inbox, message]);
+      console.log('submitted');
+      setMessage('');
+    
+  }
+
+  const handleEmojiSelect = (emoji) => {
+    setMessage(message + emoji);
+  };
+
+  const toggleEmojiPicker = () => {
+    setShowEmojiPicker(!showEmojiPicker);
+  };
   return (
     <div>
         <div>
@@ -59,8 +87,52 @@ const Chat = () => {
             </div>
 
             <div>
-              <span></span>
+              {/* {message.map((id) => ( */}
+                <div className='chat-rec chat-sent'>
+                  <div className='chatrec-div chatrec-div1'>
+                    <div className='chatrec-spans1'>
+                      <img src={dot} alt="" style={{width: '21px', height: '21px'}} />
+                      <span>01:30pm</span>
+                      <span className='chatrec-name'>Me</span>
+                    </div>
+                    <p className='chatrec-para'>I already sent the application to the unit that will do all the necessary checks and validation of the information and document provided by Mr. X</p>
+                  </div>
+                  <img src={chatpic} alt="avatar" className='chat-img'/>
+                </div>
+
+                <div className='chat-rec chat-sent'>
+                  <div className='chatrec-div chatrec-div1'>
+                    <div className='chatrec-spans1'>
+                      <img src={dot} alt="" style={{width: '21px', height: '21px'}} />
+                      <span>01:30pm</span>
+                      <span className='chatrec-name'>Me</span>
+                    </div>
+                    <p className='chatrec-para'>{inbox}</p>
+                  </div>
+                  <img src={chatpic} alt="avatar" className='chat-img'/>
+                </div>
+              {/* ))} */}
             </div>
+          </div>
+
+          <div className='chat-input'>
+            <input type="text" id='message' value={message} onChange={handleInputChange} placeholder='Message'/>
+            <div>
+              <button 
+              onClick={toggleEmojiPicker}>
+                <EmojiEmotionsOutlinedIcon />
+              </button>
+              
+              <NoteAddOutlinedIcon />
+              <button type='submit' onClick={handleClick} >
+                <SendOutlinedIcon />
+              </button>
+              
+            </div>
+
+            {showEmojiPicker && (
+              <EmojiPicker onSelect={handleEmojiSelect} style={{ position: 'absolute', bottom: '80px', right: '20px' }} />
+            )}
           </div>
         </div>
     </div>

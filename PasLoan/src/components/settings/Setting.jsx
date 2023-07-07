@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 const Setting = () => {
-    const [activeTab, setActiveTab] = useState('General')
+    const [activeTab, setActiveTab] = useState('Setting')
 
     const handleTabClick = (tab) => {
         setActiveTab(tab)
@@ -30,10 +30,7 @@ const Setting = () => {
                 </div>
 
                 <div className='setgen-headlink'>
-                    <div className={`'setgen-hlinks' ${activeTab === 'General' ? 'active' : ''}`} 
-                        onClick={() => handleTabClick("Profile")}>
-                        <Link to='/settings' className='setgen-header'>General</Link>
-                    </div>
+                    <Link to='/settings' className={`'setgen-header' ${activeTab === 'General' ? 'active' : ''}`}>General</Link>
                     
                     <Link to='/settings/profile' className='setgen-header'>Profile</Link>
                     <Link to='/settings/user-permission'>User Permissions</Link>

@@ -6,6 +6,9 @@ import { Link, useNavigate } from 'react-router-dom'
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 
+import { account } from '../../appwrite/appwiteConfig'
+import { v4 as uuidv4 } from 'uuid';
+
 
 const INITINPUT = {firstname: '', lastname: '', role: '', number: '', email: '', password: ''};
 
@@ -15,6 +18,41 @@ const SignUp = () => {
     const [errorUI, setErrorUI] = useState(null);
 
     const [passVisible, setPassVisible] = useState(false);
+
+    //signup
+    const signUpUser = async () => {
+        // e.preventDefault();
+
+        const promise = account.create (
+            uuidv4(),    ///for user IDs
+            signInput.email,
+            signInput.password,
+            signInput.firstname,
+            signInput.lastname,
+            signInput.role,
+            
+        );
+
+        promise.then(
+            function(response) {
+                console.log(response)
+                navigate("/confirm")  //when its success it should navigate to login
+            },
+
+            function(error) {
+                console.log(error) //failure
+            }
+        )
+
+        const verify = account.createVerification('http://localhost:5173/dashboard');
+        verify.then(function (response) {
+            console.log(response); // Success
+        }, function (error) {
+            console.log(error); // Failure
+        });
+    };
+
+    
   
     const togglePassVisibility = () => {
         setPassVisible((prevVisisble) => !prevVisisble);
@@ -54,10 +92,6 @@ const SignUp = () => {
                 isValid: (value) => !!value,
                 message: 'Is required.',
             },
-            // {
-            //     isValid: (value) => /^\S*$/.test(value),
-            //     message: 'Is not a valid role'
-            // },
             
         ],
         email: [
@@ -117,9 +151,9 @@ const SignUp = () => {
         const hasErrors = Object.values(errorFields).flat().length > 0;
         if (hasErrors) return setErrorUI({ ...errorFields });
         console.log(`${signInput.firstname} ${signInput.password}`)
-        setSignInput(INITINPUT);
+        // setSignInput(INITINPUT);
         console.log('submitted');
-        navigate('/confirm')
+        signUpUser();
     }
 
 
@@ -132,7 +166,7 @@ const SignUp = () => {
                 <img className='logo-img' src={logo} alt="log" />
                 <p className='logo-text'>Your one stop virtual assistant for the Loan Origination System</p>
 
-                <form onSubmit={handleSubmit} className='signup-inputs'>
+                <form method='POST' onSubmit={handleSubmit} className='signup-inputs'>
                     <h2>Sign Up</h2>
                     <div className='signup-labels'>
                         <label htmlFor="first">First Name</label>
@@ -197,7 +231,7 @@ const SignUp = () => {
                         </div>
                     </div>
 
-                    <button className='signup-btn'>Sign Up</button>
+                    <button  className='signup-btn'>Sign Up</button>
                 </form>
 
                 <p className='signup-p'>Already have an account? <span><Link to='/login'>Log In</Link></span></p>

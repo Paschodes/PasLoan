@@ -15,11 +15,8 @@ const DropImg = () => {
         {dropImg && 
             <div className='imgdrop'>
                 <button className='imgdrop-close' onClick={() => setDropImg(false)}><CloseIcon style={{width: '16px', height: '16px'}}/></button>
-                <a href="/" className='imgdrop-active'>Online</a>
-                <a href="/">On Break</a>
-                <a href="/">Offline</a>
                 <Link to='/profile'>View Profile</Link>
-                <a href="/">Profile Settings</a>
+                <Link to="/settings/profile">Profile Settings</Link>
                 <Link to='/' className='imgdrop-out'>Log Out</Link>
             </div>
         }

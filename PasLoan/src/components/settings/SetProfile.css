@@ -61,8 +61,21 @@
 
 .setpro-cam {
     position: absolute;
-    top: 143px;
-    left: 129px;
+    top: 113px;
+    left: 121px;
+    cursor: pointer;
+}
+
+.setpro-noPhoto{
+    width: 140px;
+    height: 140px;
+    font-weight: lighter;
+}
+
+.setpro-avatar{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
 .setpro-detail {

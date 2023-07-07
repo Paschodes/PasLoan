@@ -6,9 +6,11 @@ import LoginLogo from '../../LoginLogo';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 
+import { account } from '../../appwrite/appwiteConfig'
 
 
-const INPUT = {username: '', password: ''}
+
+const INPUT = {email: '', password: ''}
 
 const Login = () => {
 
@@ -18,17 +20,31 @@ const Login = () => {
   const navigate = useNavigate();
 
   const [passVisible, setPassVisible] = useState(false);
+
+  const loginUser = async () => {
+    try {
+      await account.createEmailSession(loginInput.email, loginInput.password)
+      navigate('/otp');
+    }
+    catch (error) {
+      console.log(error)
+    }
+  }
   
   const togglePassVisibility = () => {
     setPassVisible((prevVisisble) => !prevVisisble);
   };
 
   const VALIDATION = {
-    username: [
+    email: [
       {
-        isValid: (value) => /^[a-zA-Z]+ [a-zA-Z]+$/.test(value),
-        message: 'Invalid username ',
-    },
+          isValid: (value) => !!value,
+          message: 'Is required.',
+      },
+      {
+          isValid: (value) => /\S+@\S+\.\S+/.test(value),
+          message: 'Needs to be an email.',
+      },
     ],
     password: [
         {
@@ -78,9 +94,9 @@ const Login = () => {
     // console.log(errorFields)
     const hasErrors = Object.values(errorFields).flat().length > 0;
     if (hasErrors) return setErrorUI({ ...errorFields });
-    console.log(`${loginInput.username} ${loginInput.password}`);
-    setLoginInput(INPUT);
-    navigate('/dashboard');
+    console.log(`${loginInput.email} ${loginInput.password}`);
+    // setLoginInput(INPUT);
+    loginUser();
   }
 
   return (
@@ -90,15 +106,15 @@ const Login = () => {
 
             <div className='login-content'>
                 <LoginLogo />
-                <form onSubmit={handleSubmit} className='login-down'>
+                <form method='POST' onSubmit={handleSubmit} className='login-down'>
                     <h2>Welcome Back</h2>
 
                     <div className='login-inputs'>
-                        <input type="text" id='username' placeholder='Username' value={loginInput.username} onChange={handleChange}/>
+                        <input type="email" id='email' placeholder='Email' value={loginInput.email} onChange={handleChange}/>
                         <div className='error'>
-                          {errorUI?.username?.length ? (
+                          {errorUI?.email?.length ? (
                               <span style={{ color: 'red' }}>
-                              {errorUI.username[0].message}
+                              {errorUI.email[0].message}
                               </span>
                           ) : null}
                         </div>

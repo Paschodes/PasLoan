@@ -2,10 +2,17 @@ import React from 'react'
 import { HStack, PinInput, PinInputField } from '@chakra-ui/react'
 import side from '../../assets/sideImg.png'
 import './Otp.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import LoginLogo from '../../LoginLogo'
 
-const Otp = () => {
+const Otp = ({handleLogin}) => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/dashboard');
+        handleLogin()
+    }
+
   return (
     <div className='otp'>
         <img src={side} alt="login-img" className='login-img'/>
@@ -24,7 +31,7 @@ const Otp = () => {
                     </HStack>
                 </div>
 
-                <button className='otp-btn'><Link to='/dashboard'>Proceed to the Dashboard</Link></button>
+                <button onClick={handleClick} className='otp-btn'>Proceed to the Dashboard</button>
             </div>
             
             

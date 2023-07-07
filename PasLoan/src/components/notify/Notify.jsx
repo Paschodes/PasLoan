@@ -59,3 +59,21 @@ const Notify = () => {
 }
 
 export default Notify;
+
+
+
+
+// npm install appwrite
+
+// import { Client } from 'appwrite';
+
+
+// const client = new Client();
+
+// client
+//     .setEndpoint('https://cloud.appwrite.io/v1')
+//     .setProject('64a31afadc32c0c0ba0d');
+
+
+// import { v4 as uuidv4 } from 'uuid';
+// uuidv4();

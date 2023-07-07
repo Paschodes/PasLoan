@@ -15,19 +15,13 @@
     align-items: flex-start;
     padding: 0px 8px;
     gap: 16px;
-    /* position: absolute; */
     width: 160px;
     height: 24px;
-    /* left: 3px;
-    top: 16px; */
 }
 
 .imgdrop a {
-    /* position: absolute; */
     width: 135px;
     height: 24px;
-    /* left: 16px;
-    top: 100px; */
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 700;
@@ -39,10 +33,16 @@
     margin: 15px 0 0 10px;
 }
 
-.imgdrop .imgdrop-active {
+/* .imgdrop .imgdrop-active {
     background: #F0F4FC;
     border-radius: 16px;
     width: 155px;
+} */
+
+.imgdrop a:hover {
+    background: #F0F4FC;
+    border-radius: 16px;
+    width: 160px;
 }
 
 .imgdrop .imgdrop-out {

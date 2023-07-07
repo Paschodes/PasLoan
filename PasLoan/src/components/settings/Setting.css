@@ -53,7 +53,7 @@
     border: 0.5px solid #0744D3;
 }
 
-.setgen-headlink .setgen-hlinks {
+/* .setgen-headlink .setgen-hlinks {
     width: 146.91px;
     height: 24px;
     font-family: 'Extatica';
@@ -62,9 +62,9 @@
     font-size: 20px;
     line-height: 24px;
     color: #010E2A;
-}
+} */
 
-.setgen-headlink .setgen-hlinks.active {
+.setgen-headlink .setgen-headlink .active {
     border-right: 1px solid #6A8FE5;
     border-radius: 5px;
     border-top: 1px solid #6A8FE5;
